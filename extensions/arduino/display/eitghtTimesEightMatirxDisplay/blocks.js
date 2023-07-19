@@ -10,6 +10,11 @@ function registerBlocks (Blockly) {
         .find(block => block.type === 'arduino_pin_setDigitalOutput')
         .getField('PIN')
         .getOptions();
+    
+    const getColourMenu = () => [
+        [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],
+        [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK, 'LOW']
+    ];
 
     Blockly.Blocks.eitghtTimesEightMatirxDisplay_init = {
         init: function () {
@@ -46,10 +51,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK, 'LOW']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -83,10 +85,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK, 'LOW']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -108,10 +107,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK, 'LOW']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -133,10 +129,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK, 'LOW']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -154,10 +147,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],
-                            [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK, 'LOW']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,

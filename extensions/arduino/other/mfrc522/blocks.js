@@ -10,6 +10,11 @@ function registerBlocks (Blockly) {
         .find(block => block.type === 'arduino_pin_setDigitalOutput')
         .getField('PIN')
         .getOptions();
+    
+    const getTypeMenu = () => [
+        [Blockly.Msg.MFRC522_DATATYPE_NUBMER, 'number'],
+        [Blockly.Msg.MFRC522_DATATYPE_STRING, 'string']
+    ];
 
     Blockly.Blocks.mfrc522_init = {
         init: function () {
@@ -160,10 +165,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'TYPE',
-                        options: [
-                            [Blockly.Msg.MFRC522_DATATYPE_NUBMER, 'number'],
-                            [Blockly.Msg.MFRC522_DATATYPE_STRING, 'string']
-                        ]
+                        options: getTypeMenu()
                     }
                 ],
                 tooltip: Blockly.Msg.MFRC522_GETBLOCKDATA_TOOLTIP,
@@ -190,10 +192,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'TYPE',
-                        options: [
-                            [Blockly.Msg.MFRC522_DATATYPE_NUBMER, 'number'],
-                            [Blockly.Msg.MFRC522_DATATYPE_STRING, 'string']
-                        ]
+                        options: getTypeMenu()
                     }
                 ],
                 colour: colour,

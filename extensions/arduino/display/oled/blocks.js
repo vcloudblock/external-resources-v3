@@ -5,6 +5,17 @@ function registerBlocks (Blockly) {
     const colour = '#C0C0C0';
     const secondaryColour = '#A9A9A9';
 
+    const getColourMenu = () => [
+        [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
+        [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
+        [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
+    ];
+
+    const getTextColourMenu = () => [
+        [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
+        [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK']
+    ];
+
     Blockly.Blocks.oled_init = {
         init: function () {
             this.jsonInit({
@@ -58,11 +69,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -96,11 +103,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -134,11 +137,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -168,11 +167,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -202,11 +197,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -244,11 +235,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -286,11 +273,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -332,11 +315,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -378,11 +357,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK'],
-                            [Blockly.Msg.OLED_COLOR_INVERSE, 'SSD1306_INVERSE']
-                        ]
+                        options: getColourMenu()
                     }
                 ],
                 colour: colour,
@@ -414,18 +389,12 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'COLOUR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK']
-                        ]
+                        options: getTextColourMenu()
                     },
                     {
                         type: 'field_dropdown',
                         name: 'BGCOLOR',
-                        options: [
-                            [Blockly.Msg.OLED_COLOR_WHITE, 'SSD1306_WHITE'],
-                            [Blockly.Msg.OLED_COLOR_BLACK, 'SSD1306_BLACK']
-                        ]
+                        options: getTextColourMenu()
                     }
                 ],
                 colour: colour,

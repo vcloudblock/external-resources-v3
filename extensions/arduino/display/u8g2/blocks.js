@@ -10,6 +10,19 @@ function registerBlocks (Blockly) {
         .find(block => block.type === 'arduino_pin_setDigitalOutput')
         .getField('PIN')
         .getOptions();
+    
+    const getStyleMenu = () => [
+        [Blockly.Msg.U8G2_STYLE_NOFILLED, 'no-filled'],
+        [Blockly.Msg.U8G2_STYLE_FILLED, 'filled']
+    ];
+
+    const getPartMenu = () => [
+        [Blockly.Msg.U8G2_PART_ALL, 'U8G2_DRAW_ALL'],
+        [Blockly.Msg.U8G2_PART_UPPER_RIGHT, 'U8G2_DRAW_UPPER_RIGHT'],
+        [Blockly.Msg.U8G2_PART_UPPER_LEFT, 'U8G2_DRAW_UPPER_LEFT'],
+        [Blockly.Msg.U8G2_PART_LOWER_LEFT, 'U8G2_DRAW_LOWER_LEFT'],
+        [Blockly.Msg.U8G2_PART_LOWER_RIGHT, 'U8G2_DRAW_LOWER_RIGHT']
+    ];
 
     Blockly.Blocks.u8g2_12864LCD_init = {
         init: function () {
@@ -200,10 +213,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'STYLE',
-                        options: [
-                            [Blockly.Msg.U8G2_STYLE_NOFILLED, 'no-filled'],
-                            [Blockly.Msg.U8G2_STYLE_FILLED, 'filled']
-                        ]
+                        options: getStyleMenu()
                     },
                     {
                         type: 'input_value',
@@ -237,10 +247,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'STYLE',
-                        options: [
-                            [Blockly.Msg.U8G2_STYLE_NOFILLED, 'no-filled'],
-                            [Blockly.Msg.U8G2_STYLE_FILLED, 'filled']
-                        ]
+                        options: getStyleMenu()
                     },
                     {
                         type: 'input_value',
@@ -278,10 +285,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'STYLE',
-                        options: [
-                            [Blockly.Msg.U8G2_STYLE_NOFILLED, 'no-filled'],
-                            [Blockly.Msg.U8G2_STYLE_FILLED, 'filled']
-                        ]
+                        options: getStyleMenu()
                     },
                     {
                         type: 'input_value',
@@ -298,13 +302,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'PART',
-                        options: [
-                            [Blockly.Msg.U8G2_PART_ALL, 'U8G2_DRAW_ALL'],
-                            [Blockly.Msg.U8G2_PART_UPPER_RIGHT, 'U8G2_DRAW_UPPER_RIGHT'],
-                            [Blockly.Msg.U8G2_PART_UPPER_LEFT, 'U8G2_DRAW_UPPER_LEFT'],
-                            [Blockly.Msg.U8G2_PART_LOWER_LEFT, 'U8G2_DRAW_LOWER_LEFT'],
-                            [Blockly.Msg.U8G2_PART_LOWER_RIGHT, 'U8G2_DRAW_LOWER_RIGHT']
-                        ]
+                        options: getPartMenu()
                     }
                 ],
                 colour: colour,
@@ -322,10 +320,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'STYLE',
-                        options: [
-                            [Blockly.Msg.U8G2_STYLE_NOFILLED, 'no-filled'],
-                            [Blockly.Msg.U8G2_STYLE_FILLED, 'filled']
-                        ]
+                        options: getStyleMenu()
                     },
                     {
                         type: 'input_value',
@@ -346,13 +341,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'PART',
-                        options: [
-                            [Blockly.Msg.U8G2_PART_ALL, 'U8G2_DRAW_ALL'],
-                            [Blockly.Msg.U8G2_PART_UPPER_RIGHT, 'U8G2_DRAW_UPPER_RIGHT'],
-                            [Blockly.Msg.U8G2_PART_UPPER_LEFT, 'U8G2_DRAW_UPPER_LEFT'],
-                            [Blockly.Msg.U8G2_PART_LOWER_LEFT, 'U8G2_DRAW_LOWER_LEFT'],
-                            [Blockly.Msg.U8G2_PART_LOWER_RIGHT, 'U8G2_DRAW_LOWER_RIGHT']
-                        ]
+                        options: getPartMenu()
                     }
                 ],
                 colour: colour,

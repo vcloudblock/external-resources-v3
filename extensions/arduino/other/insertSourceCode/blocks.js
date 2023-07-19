@@ -5,6 +5,11 @@ function registerBlocks (Blockly) {
     const color = '#5B5B5B';
     const secondaryColour = '#3C3C3C';
 
+    getEscapeMenu = () => [
+        [Blockly.Msg.INSERTSOURCECODE_ESCAPE, '0'],
+        [Blockly.Msg.INSERTSOURCECODE_DONTESCAPE, '1']
+    ];
+
     Blockly.Blocks.insertSourceCode_commandBlock = {
         init: function () {
             this.jsonInit({
@@ -16,9 +21,7 @@ function registerBlocks (Blockly) {
                 {
                     type: 'field_dropdown',
                     name: 'ESCAPE',
-                    options: [
-                        [Blockly.Msg.INSERTSOURCECODE_ESCAPE, '0'],
-                        [Blockly.Msg.INSERTSOURCECODE_DONTESCAPE, '1']]
+                    options: getEscapeMenu()
                 }],
                 colour: color,
                 secondaryColour: secondaryColour,
@@ -68,9 +71,7 @@ function registerBlocks (Blockly) {
                 {
                     type: 'field_dropdown',
                     name: 'ESCAPE',
-                    options: [
-                        [Blockly.Msg.INSERTSOURCECODE_ESCAPE, '0'],
-                        [Blockly.Msg.INSERTSOURCECODE_DONTESCAPE, '1']]
+                    options: getEscapeMenu()
                 }],
                 colour: color,
                 secondaryColour: secondaryColour,
@@ -91,9 +92,7 @@ function registerBlocks (Blockly) {
                 {
                     type: 'field_dropdown',
                     name: 'ESCAPE',
-                    options: [
-                        [Blockly.Msg.INSERTSOURCECODE_ESCAPE, '0'],
-                        [Blockly.Msg.INSERTSOURCECODE_DONTESCAPE, '1']]
+                    options: getEscapeMenu()
                 }],
                 colour: color,
                 secondaryColour: secondaryColour,

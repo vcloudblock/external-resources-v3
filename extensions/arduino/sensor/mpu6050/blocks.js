@@ -5,6 +5,12 @@ function registerBlocks (Blockly) {
     const color = '#0066CC';
     const secondaryColour = '#005AB5';
 
+    const axisMenu = [
+        ['x', 'x'],
+        ['y', 'y'],
+        ['z', 'z']
+    ];
+
     Blockly.Blocks.mpu6050_init = {
         init: function () {
             this.jsonInit({
@@ -70,11 +76,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'AXIS',
-                        options: [
-                            ['x', 'x'],
-                            ['y', 'y'],
-                            ['z', 'z']
-                        ]
+                        options: axisMenu
                     }
                 ],
                 colour: color,
@@ -92,11 +94,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'AXIS',
-                        options: [
-                            ['x', 'x'],
-                            ['y', 'y'],
-                            ['z', 'z']
-                        ]
+                        options: axisMenu
                     }
                 ],
                 colour: color,
