@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_FOURDIGITCLOCKDISPLAY_CATEGORY}" id="FOURDIGITCLOCKDISPLAY_CATEGORY" colour="#FF7F50" secondaryColour="#FF6347">
     <block type="fourDigitClockDisplay_init" id="fourDigitClockDisplay_init">
@@ -43,4 +43,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.ds18b20_init = function (block) {
         const quantity = Blockly.Arduino.valueToCode(block, 'QUANTITY', Blockly.Arduino.ORDER_ATOMIC);
         const pin = block.getFieldValue('PIN');
@@ -26,4 +26,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

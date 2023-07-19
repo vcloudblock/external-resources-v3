@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addBlocks (Blockly) {
+function registerBlocks (Blockly) {
     const colour = '#B943FF';
     const secondaryColour = '#9900FF';
 
@@ -159,4 +159,4 @@ function addBlocks (Blockly) {
     return Blockly;
 }
 
-exports = addBlocks;
+exports = registerBlocks;

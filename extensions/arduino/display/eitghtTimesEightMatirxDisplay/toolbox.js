@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_EITGHTTIMESEIGHTMATIRXDISPLAY_CATEGORY}" id="EITGHTTIMESEIGHTMATIRXDISPLAY_CATEGORY" colour="#CE0000" secondaryColour="#AE0000">
     <block type="eitghtTimesEightMatirxDisplay_init" id="eitghtTimesEightMatirxDisplay_init">
@@ -70,4 +70,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

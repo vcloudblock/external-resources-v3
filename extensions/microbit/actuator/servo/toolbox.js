@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_SERVO_CATEGORY}" id="SERVO_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
     <block type="servo_write" id="servo_write">
@@ -14,4 +14,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

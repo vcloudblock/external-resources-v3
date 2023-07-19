@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.max6675_init = function (block) {
         const d0 = block.getFieldValue('DO');
         const clk = block.getFieldValue('CLK');
@@ -23,4 +23,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

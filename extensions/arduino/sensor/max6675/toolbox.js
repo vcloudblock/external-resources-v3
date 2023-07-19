@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_MAX6675_CATEGORY}" id="MAX6675_CATEGORY" colour="#007979" secondaryColour="#005757">
     <block type="max6675_init" id="max6675_init">
@@ -13,4 +13,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

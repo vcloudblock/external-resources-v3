@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_DHT_CATEGORY}" id="DHT_CATEGORY" colour="#42CCFF" secondaryColour="#00BFFF">
     <block type="dht_init" id="dht_init">
@@ -29,4 +29,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

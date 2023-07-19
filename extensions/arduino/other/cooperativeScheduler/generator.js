@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.cooperativeScheduler_start = function () {
         return 'mySCoop.start();\n';
     };
@@ -35,4 +35,4 @@ ${loopBranch}}`;
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

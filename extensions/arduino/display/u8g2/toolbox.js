@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_U8G2_CATEGORY}" id="U8G2_CATEGORY" colour="#FF7014" secondaryColour="#E1640A">
     <block type="u8g2_12864LCD_init" id="u8g2_12864LCD_init">
@@ -236,4 +236,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

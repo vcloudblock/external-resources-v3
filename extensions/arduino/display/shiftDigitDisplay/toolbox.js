@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_SHIFTDIGITDISPLAY_CATEGORY}" id="SHIFTDIGITDISPLAY_CATEGORY" colour="#0072E3" secondaryColour="#005AB5">
     <block type="shiftDigitDisplay_init" id="shiftDigitDisplay_init">
@@ -43,4 +43,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

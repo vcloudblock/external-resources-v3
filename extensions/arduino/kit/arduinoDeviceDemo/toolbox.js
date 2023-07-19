@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
 
     return `
 <category name="%{BKY_ARDUINODEVICEDEMO_CATEGORY}" id="ARDUINODEVICEDEMO_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF">
@@ -39,4 +39,4 @@ function addToolbox () {
 
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

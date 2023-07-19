@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_OLED_CATEGORY}" id="OLED_CATEGORY" colour="#C0C0C0" secondaryColour="#A9A9A9">
     <block type="oled_init" id="oled_init">
@@ -268,4 +268,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

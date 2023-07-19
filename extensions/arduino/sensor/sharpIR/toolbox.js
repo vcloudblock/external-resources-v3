@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_SHARPIR_CATEGORY}" id="SHARPIR_CATEGORY" colour="#9F0050" secondaryColour="#820041">
     <block type="sharpIR_init" id="sharpIR_init">
@@ -22,4 +22,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

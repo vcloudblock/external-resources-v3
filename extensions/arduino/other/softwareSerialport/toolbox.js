@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_SOFTWARESERIAL_CATEGORY}" id="SOFTWARESERIAL_CATEGORY" colour="#00D7B0" secondaryColour="#00BE96">
     <block type="softwareSerial_begin" id="softwareSerial_begin">
@@ -51,4 +51,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

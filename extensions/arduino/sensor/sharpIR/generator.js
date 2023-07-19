@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.sharpIR_init = function (block) {
         const no = Blockly.Arduino.valueToCode(block, 'NO', Blockly.Arduino.ORDER_ATOMIC);
         const pin = block.getFieldValue('PIN');
@@ -20,4 +20,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

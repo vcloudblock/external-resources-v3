@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_NRF24L01_CATEGORY}" id="NRF24L01_CATEGORY" colour="#FF79BC" secondaryColour="#FF359A">
     <block type="nrf24l01_init" id="nrf24l01_init">
@@ -85,4 +85,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

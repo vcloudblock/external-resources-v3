@@ -1,6 +1,6 @@
 /* eslint-disable func-style */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.ultrasonic_readDistance = function (block) {
         const trig = block.getFieldValue('TRIG');
         const echo = block.getFieldValue('ECHO');
@@ -17,4 +17,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

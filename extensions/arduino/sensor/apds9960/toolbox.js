@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_APDS9960_CATEGORY}" id="APDS9960_CATEGORY" colour="#F08080" secondaryColour="#CD5C5C">
     <block type="apds9960_init" id="apds9960_init">
@@ -19,4 +19,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

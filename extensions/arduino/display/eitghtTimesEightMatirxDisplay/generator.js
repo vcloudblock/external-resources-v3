@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.eitghtTimesEightMatirxDisplay_init = function (block) {
         const cs = block.getFieldValue('CS');
 
@@ -74,4 +74,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

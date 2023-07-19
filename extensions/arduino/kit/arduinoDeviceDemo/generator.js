@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.deviceDemo_button = function () {
         const pin = this.getFieldValue('PIN');
         Blockly.Arduino.setups_[`setup_input_${pin}`] = `pinMode(${pin}, INPUT);`;
@@ -46,4 +46,4 @@ function addGenerator (Blockly) {
 }
 
 
-exports = addGenerator;
+exports = registerGenerators;

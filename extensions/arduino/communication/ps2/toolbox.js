@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_PS2_CATEGORY}" id="PS2_CATEGORY" colour="#FF3399" secondaryColour="#C71585">
     <block type="ps2_init" id="ps2_init">
@@ -19,4 +19,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

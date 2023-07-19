@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_MORECOMMENTS_CATEGORY}" id="MORECOMMENTS_CATEGORY" colour="#529955" secondaryColour="#457F48">
     <block type="moreComments_commandBlock" id="moreComments_commandBlock">
@@ -21,4 +21,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

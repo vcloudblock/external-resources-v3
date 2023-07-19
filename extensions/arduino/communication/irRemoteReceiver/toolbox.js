@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_IRREMOTERECEIVER_CATEGORY}" id="IRREMOTERECEIVER_CATEGORY" colour="#BB5E00" secondaryColour="#9F5000">
     <block type="irRemoteReceiver_init" id="irRemoteReceiver_init">
@@ -16,4 +16,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

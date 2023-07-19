@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_MFRC522_CATEGORY}" id="MFRC522_CATEGORY" colour="#F00078" secondaryColour="#D9006C">
     <block type="mfrc522_init" id="mfrc522_init">
@@ -100,4 +100,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

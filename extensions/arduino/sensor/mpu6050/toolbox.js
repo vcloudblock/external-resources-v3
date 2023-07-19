@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_MPU6050_CATEGORY}" id="MPU6050_CATEGORY" colour="#0066CC" secondaryColour="#005AB5">
     <block type="mpu6050_init" id="mpu6050_init">
@@ -16,4 +16,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

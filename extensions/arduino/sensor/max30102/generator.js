@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.max30102_init = function () {
         Blockly.Arduino.includes_.max30102_init = `#include <Wire.h>\n#include <MAX30105.h>\n#include <heartRate.h>`;
         Blockly.Arduino.definitions_.max30102_init = `MAX30105 max30102;\nlong max30102_irValue;\nfloat max30102_bpm;`;
@@ -29,4 +29,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

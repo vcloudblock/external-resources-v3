@@ -5,7 +5,7 @@
 /* eslint-disable quotes */
 /* eslint-disable dot-notation */
 
-function addMsg (Blockly) {
+function registerMessages (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
@@ -70,5 +70,5 @@ function addMsg (Blockly) {
     return Blockly;
 }
 
-exports = addMsg;
+exports = registerMessages;
 // End of combined translations

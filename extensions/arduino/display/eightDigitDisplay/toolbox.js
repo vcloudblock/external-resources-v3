@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_EIGHTDIGITDISPLAY_CATEGORY}" id="EIGHTDIGITDISPLAY_CATEGORY" colour="#A0522D" secondaryColour="#8B4513">
     <block type="eightDigitDisplay_init" id="eightDigitDisplay_init">
@@ -33,4 +33,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

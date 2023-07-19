@@ -1,6 +1,6 @@
 /* eslint-disable func-style */
 /* eslint-disable require-jsdoc */
-function addMsg (Blockly) {
+function registerMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales.en, {
         ARDUINODEVICEDEMO_CATEGORY: 'Modules',
         DEVICEDEMO_BUTTON: 'Read button Port %1',
@@ -22,4 +22,4 @@ function addMsg (Blockly) {
     return Blockly;
 }
 
-exports = addMsg;
+exports = registerMessages;

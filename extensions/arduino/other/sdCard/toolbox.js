@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_SDCARD_CATEGORY}" id="SDCARD_CATEGORY" colour="#00DD77" secondaryColour="#00AA55">
     <block type="sdCard_init" id="sdCard_init">
@@ -48,4 +48,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

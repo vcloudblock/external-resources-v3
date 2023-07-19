@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_TCS3200_CATEGORY}" id="TCS3200_CATEGORY" colour="#AE00AE" secondaryColour="#930093">
     <block type="tcs3200_init" id="dht_init">
@@ -22,4 +22,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

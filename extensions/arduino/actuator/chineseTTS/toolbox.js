@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_CHINESETTS_CATEGORY}" id="CHINESETTS_CATEGORY" colour="#5A5AAD" secondaryColour="#484891">
     <block type="chineseTTS_init" id="chineseTTS_init">
@@ -37,4 +37,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

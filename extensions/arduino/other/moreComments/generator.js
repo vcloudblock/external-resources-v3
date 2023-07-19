@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
 
     Blockly.Arduino.moreComments_commandBlock = function (block) {
         const comments = Blockly.Arduino.valueToCode(block, 'COMMENTS', Blockly.Arduino.ORDER_ATOMIC).slice(1, -1);
@@ -25,4 +25,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

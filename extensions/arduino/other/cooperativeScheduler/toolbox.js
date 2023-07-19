@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_COOPERATIVESCHEDULER_CATEGORY}" id="COOPERATIVESCHEDULER_CATEGORY" colour="#A6D200" secondaryColour="#8CB400" >
     <block type="cooperativeScheduler_start" id="cooperativeScheduler_start">
@@ -23,4 +23,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;

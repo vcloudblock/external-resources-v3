@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addGenerator (Blockly) {
+function registerGenerators (Blockly) {
     Blockly.Arduino.pca9685_init = function (block) {
         const addr = Blockly.Arduino.valueToCode(block, 'ADDR', Blockly.Arduino.ORDER_ATOMIC);
 
@@ -69,4 +69,4 @@ function addGenerator (Blockly) {
     return Blockly;
 }
 
-exports = addGenerator;
+exports = registerGenerators;

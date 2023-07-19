@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-function addToolbox () {
+function registerToolboxs () {
     return `
 <category name="%{BKY_PCA9685_CATEGORY}" id="PCA9685_CATEGORY" colour="#9F4D95" secondaryColour="#8F4586">
     <block type="pca9685_init" id="pca9685_init">
@@ -51,4 +51,4 @@ function addToolbox () {
 </category>`;
 }
 
-exports = addToolbox;
+exports = registerToolboxs;
