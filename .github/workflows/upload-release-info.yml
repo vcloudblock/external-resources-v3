@@ -21,4 +21,4 @@ jobs:
         run: |
           export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
           export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
-          upload-releaseInfo --repo=openblockcc/external-resources-v2 --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
+          upload-releaseInfo --repo=openblockcc/external-resources-v3 --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
