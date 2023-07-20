@@ -5,17 +5,9 @@ function registerBlocks (Blockly) {
     const color = '#FF6F00';
     const secondaryColour = '#FF4F00';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
-    const pwmPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setPwmOutput')
-        .getField('PIN')
-        .getOptions();
+    const pwmPins = Blockly.Device.getPinOptions('arduino_pin_setPwmOutput');
 
     Blockly.Blocks.l298n_init = {
         init: function () {

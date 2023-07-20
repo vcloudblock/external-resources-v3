@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const color = '#009393';
     const secondaryColour = '#007979';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     Blockly.Blocks.ds18b20_init = {
         init: function () {

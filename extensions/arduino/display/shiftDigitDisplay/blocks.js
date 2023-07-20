@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const colour = '#0072E3';
     const secondaryColour = '#005AB5';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     Blockly.Blocks.shiftDigitDisplay_init = {
         init: function () {

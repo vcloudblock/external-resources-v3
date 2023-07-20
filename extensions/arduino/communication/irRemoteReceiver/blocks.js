@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const color = '#BB5E00';
     const secondaryColour = '#9F5000';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     Blockly.Blocks.irRemoteReceiver_init = {
         init: function () {

@@ -10,11 +10,7 @@ function registerBlocks (Blockly) {
     const UltraSonicDistanceSensor_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjM2MzMxNzc0NDQ1IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjYzNDQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTY0LjY3IDM3MC4xNnYyODMuNjhoODk0LjY2VjM3MC4xNnogbTgyOS4wOCAyMTguMTJoLTc2My41VjQzNS43MmgxMjguMTN2NTQuNDdIMzI0di01NC40N2g4MS42djk4LjA5aDY1LjU4di05OC4wOWg4MS42NHY1NC40N2g2NS41OHYtNTQuNDdINzAwdjk4LjA5aDY1LjU4di05OC4wOWgxMjguMTd6IiBmaWxsPSIjZmZmZmZmIiBwLWlkPSI2MzQ1Ij48L3BhdGg+PC9zdmc+';
     const RGB_ICO = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABeUlEQVRIidXUMUhVcRTH8U8PTBdxEDFoUbekhoSnFEQYKDQEwbMxkAiaotoanZzErSGCiIacxC3ESXAIbHDp5aQEhbjoomAqaMM9Dy7Xe/WWObwf/Plzz/93/t/D+V8Oza5LBfE21DCCm7iCDlSwi5/4hs+Yxe+/gY5iA8cl16/IKaXb2I/EZbzCELrQihZ0YhAvUA/vfvjO1EIkvFXcvrQqeBc582UAu2HuLmMuo0rm+yD244sCLMf+KMfbeNQ13I3Yfckjb+FJxreJp9lLHsbhBtpzAFVMYjFi3zGOYaymfPfwOoo5oaUwTeYAHuMT5iJ2iOvoRV/KN4OvmM4DVHGEPfRkAOtxdi0FuJEqquGbwAd8yQPAx1QlacAtSc8b/a7jGQYygAd4KXmbXF2V/LJH6E8lVqO6lYiN4Ad28D5i27HW8LwIAG/i0qnTTOfRnQCsnGX8V7VKelg05LZw+byQsVMAtTIXlBloRWOjTO6JUfHf1fyA5tcfDIFywhVTZQcAAAAASUVORK5CYII=';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     Blockly.Blocks.deviceDemo_button = {
         init: function () {

@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const colour = '#CE0000';
     const secondaryColour = '#AE0000';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
     
     const getColourMenu = () => [
         [Blockly.Msg.EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED, 'HIGH'],

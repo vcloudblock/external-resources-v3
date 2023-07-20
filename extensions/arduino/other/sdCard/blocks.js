@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const colour = '#00DD77';
     const secondaryColour = '#00AA55';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     Blockly.Blocks.sdCard_init = {
         init: function () {

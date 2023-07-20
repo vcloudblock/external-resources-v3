@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const colour = '#FF7F50';
     const secondaryColour = '#FF6347';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     Blockly.Blocks.fourDigitClockDisplay_init = {
         init: function () {

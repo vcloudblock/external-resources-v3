@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const colour = '#F00078';
     const secondaryColour = '#D9006C';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
     
     const getTypeMenu = () => [
         [Blockly.Msg.MFRC522_DATATYPE_NUBMER, 'number'],

@@ -5,11 +5,7 @@ function registerBlocks (Blockly) {
     const color = '#9F0050';
     const secondaryColour = '#820041';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_readAnalogPin')
-        .getField('PIN')
-        .getOptions();
+    const analogPins = Blockly.Device.getPinOptions('arduino_pin_readAnalogPin');
 
     Blockly.Blocks.sharpIR_init = {
         init: function () {
@@ -23,7 +19,7 @@ function registerBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'PIN',
-                        options: digitalPins
+                        options: analogPins
                     },
                     {
                         type: 'field_dropdown',
