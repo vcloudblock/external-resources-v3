@@ -4,7 +4,7 @@ const passiveBuzzer = formatMessage => ({
         default: 'Passive Buzzer'
     }),
     extensionId: 'passiveBuzzer',
-    version: '1.0.0',
+    version: '2.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266'],
     author: 'ArthurZheng',

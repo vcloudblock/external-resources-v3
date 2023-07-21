@@ -488,8 +488,6 @@ function registerScratchExtension() {
                     description: 'Label for the passiveBuzzer extension category'
                 }),
 
-                // menuIconURI: iconURI,
-
                 color1: '#B943FF',
                 color2: '#9900FF',
                 color3: '#9900FF',
@@ -507,7 +505,7 @@ function registerScratchExtension() {
                             PIN: {
                                 type: ArgumentType.STRING,
                                 menu: 'outPins',
-                                defaultValue: this.PINS_MENU[0].value
+                                defaultValue: this.PINS_MENU[2].value
                             }
                         }
                     },
