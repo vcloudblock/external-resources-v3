@@ -31,6 +31,8 @@ function registerGenerators (Blockly) {
         return `my_buzzer.playRingtone(${no});\n`;
     };
 
+    Blockly.Arduino['passiveBuzzer_custom_math_whole_number'] = Blockly.Arduino['math_number'];
+
     return Blockly;
 }
 
