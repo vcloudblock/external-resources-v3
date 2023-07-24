@@ -5,7 +5,7 @@ const apds9960 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/apds9960.png`,
+    iconURL: `assets/apds9960.png`,
     description: formatMessage({
         id: 'apds9960.description',
         default: 'Proximity, Light, RGB, and Gesture Sensor which uses an I2C interface.'

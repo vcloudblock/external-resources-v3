@@ -7,7 +7,7 @@ const ultrasonic = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['microPythonEsp32', 'microPythonEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/ultrasonic.png`,
+    iconURL: `assets/ultrasonic.png`,
     description: formatMessage({
         id: 'ultrasonic.description',
         default: 'Standard ultrasonic distance measurement module.'

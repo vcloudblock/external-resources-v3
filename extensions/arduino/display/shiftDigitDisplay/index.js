@@ -8,7 +8,7 @@ const shiftDigitDisplay = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'ArthurZheng',
-    iconURL: `asset/shiftDigitDisplay.png`,
+    iconURL: `assets/shiftDigitDisplay.png`,
     description: formatMessage({
         id: 'shiftDigitDisplay.description',
         default: 'Digital dislapy based on 74HC595 with dynamic scanning display.'

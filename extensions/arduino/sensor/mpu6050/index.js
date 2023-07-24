@@ -8,7 +8,7 @@ const mpu6050 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/mpu6050.png`,
+    iconURL: `assets/mpu6050.png`,
     description: formatMessage({
         id: 'mpu6050.description',
         default: '6-axis attitude sensor module based on MPU6050.'

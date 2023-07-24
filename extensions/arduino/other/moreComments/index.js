@@ -8,7 +8,7 @@ const moreComments = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/moreComments.png`,
+    iconURL: `assets/moreComments.png`,
     description: formatMessage({
         id: 'moreComments.description',
         default: 'Allows you to add comments in the form of blocks to increase program readability.'

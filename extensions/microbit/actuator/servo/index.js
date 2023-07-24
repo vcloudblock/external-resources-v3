@@ -9,7 +9,7 @@ const servo = formatMessage => ({
     type: 'microbit',
     supportDevice: ['microbit', 'microbitV2'],
     author: 'ArthurZheng',
-    iconURL: `asset/servo.png`,
+    iconURL: `assets/servo.png`,
     description: formatMessage({
         id: 'servo.description',
         default: 'Classic servo support for microbit.',

@@ -8,7 +8,7 @@ const max6675 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/max6675.png`,
+    iconURL: `assets/max6675.png`,
     description: formatMessage({
         id: 'max6675.description',
         default: 'K-type thermocouple temperature measurement module based on MAX6675, the measurement range is 0 ~ 1024 ℃'

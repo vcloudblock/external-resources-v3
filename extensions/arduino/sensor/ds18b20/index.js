@@ -8,7 +8,7 @@ const ds18b20 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/ds18b20.png`,
+    iconURL: `assets/ds18b20.png`,
     description: formatMessage({
         id: 'ds18b20.description',
         default: 'Single bus digital temperature sensor based on DS18B20.'

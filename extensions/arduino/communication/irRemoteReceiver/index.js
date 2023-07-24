@@ -8,7 +8,7 @@ const irRemoteReceiver = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/irRemoteReceiver.png`,
+    iconURL: `assets/irRemoteReceiver.png`,
     description: formatMessage({
         id: 'irRemoteReceiver.description',
         default: 'Receiving and decoding data in infrared carrier.'

@@ -8,7 +8,7 @@ const ps2 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/ps2.png`,
+    iconURL: `assets/ps2.png`,
     description: formatMessage({
         id: 'ps2.description',
         default: 'PS2 wireless remote controller with 4 signal lines.'

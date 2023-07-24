@@ -8,7 +8,7 @@ const eitghtTimesEightMatirxDisplay = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'ArthurZheng',
-    iconURL: `asset/eitghtTimesEightMatirxDisplay.png`,
+    iconURL: `assets/eitghtTimesEightMatirxDisplay.png`,
     description: formatMessage({
         id: 'eitghtTimesEightMatirxDisplay.description',
         default: '8x8 matrix display module based on MAX7219.'

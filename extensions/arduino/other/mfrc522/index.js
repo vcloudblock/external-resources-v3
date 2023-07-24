@@ -8,7 +8,7 @@ const mfrc522 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/mfrc522.png`,
+    iconURL: `assets/mfrc522.png`,
     description: formatMessage({
         id: 'mfrc522.description',
         default: '13.56MHz radio frequency identification module using spi interface.'

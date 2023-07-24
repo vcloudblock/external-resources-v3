@@ -8,7 +8,7 @@ const max30102 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/max30102.png`,
+    iconURL: `assets/max30102.png`,
     description: formatMessage({
         id: 'max30102.description',
         default: 'Blood oxygen and heart rate detection module based on MAX30102.'

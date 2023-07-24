@@ -8,7 +8,7 @@ const ultrasonic = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'Liang',
-    iconURL: `asset/ultrasonic.png`,
+    iconURL: `assets/ultrasonic.png`,
     description: formatMessage({
         id: 'ultrasonic.description',
         default: 'Standard ultrasonic distance measurement module.'

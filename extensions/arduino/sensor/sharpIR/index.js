@@ -8,7 +8,7 @@ const sharpIR = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/sharpIR.png`,
+    iconURL: `assets/sharpIR.png`,
     description: formatMessage({
         id: 'sharpIR.description',
         default: 'Infrared distance sensor based on the principle of triangle ranging.'

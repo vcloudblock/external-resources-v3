@@ -8,7 +8,7 @@ const softwareSerial = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/softwareSerial.png`,
+    iconURL: `assets/softwareSerial.png`,
     description: formatMessage({
         id: 'softwareSerial.description',
         default: 'Allow serial communication on other digital pins of the Arduino.'

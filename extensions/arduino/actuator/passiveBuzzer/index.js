@@ -8,7 +8,7 @@ const passiveBuzzer = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/passiveBuzzer.png`,
+    iconURL: `assets/passiveBuzzer.png`,
     description: formatMessage({
         id: 'passiveBuzzer.description',
         default: 'Unlike the active buzzer, the passive buzzer can be used to make different tones of sound and play some ringtones.'

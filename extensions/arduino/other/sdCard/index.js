@@ -8,7 +8,7 @@ const sdCard = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
-    iconURL: `asset/sdCard.png`,
+    iconURL: `assets/sdCard.png`,
     description: formatMessage({
         id: 'sdCard.description',
         default: 'Save or read your data in SD card.'

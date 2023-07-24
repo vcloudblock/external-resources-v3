@@ -7,7 +7,7 @@ const cooperativeScheduler = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'ArthurZheng',
-    iconURL: `asset/cooperativeScheduler.png`,
+    iconURL: `assets/cooperativeScheduler.png`,
     description: formatMessage({
         id: 'cooperativeScheduler.description',
         default: 'Allow Arduino run multiple tasks.'
