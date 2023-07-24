@@ -7,17 +7,21 @@ const deviceDemo = formatMessage => ({
     manufactor: 'OpenBlock',
     learnMore: '', // A link you can learn more about the device
     typeList: ['arduino', 'microPython'],
-    iconURL: 'asset/deviceDemo.png',
+    iconURL: 'assets/deviceDemo.png',
     description: formatMessage({
         id: 'deviceDemo.description',
-        default: 'An example showing how to add a third-party board.'
-    }),
+        default: 'An example showing how to add a third-party board by inheriting a built-in board.'
+    }),    
+    featured: true,
+    disabled: false,
+    bluetoothRequired: false,
+    serialportRequired: true,
     pnpidList: [
         'USB\\VID_10C4&PID_EA60', // CP2102
         'USB\\VID_1A86&PID_7523' // CH340
     ],
-    connectionIconURL: 'asset/deviceDemo-illustration.svg',
-    connectionSmallIconURL: 'asset/deviceDemo-small.svg',
+    connectionIconURL: 'assets/deviceDemo-illustration.svg',
+    connectionSmallIconURL: 'assets/deviceDemo-small.svg',
     programMode: ['realtime', 'upload'],
     defaultProgramMode: 'upload',
     programLanguage: ['block', 'c', 'cpp', 'microPython'],
