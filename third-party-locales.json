@@ -1,10 +1,14 @@
 {
     "en": {
         "deviceDemo.name": "Third Party Device Demo",
-        "deviceDemo.description": "An example showing how to add a third-party board."
+        "deviceDemo.description": "An example showing how to add a third-party board by inheriting a built-in board.",
+        "deviceDemo2.name": "Third Party Device Demo 2",
+        "deviceDemo2.description": "An example showing how to add a brand new form of third-party board via the register file"
     },
     "zh-cn": {
         "deviceDemo.name": "第三方设备演示",
-        "deviceDemo.description": "演示如何添加第三方控制板的示例。"
+        "deviceDemo.description": "演示如何通过继承内置控制板的方式添加第三方控制板的示例。",
+        "deviceDemo2.name": "第三方设备演示 2",
+        "deviceDemo2.description": "示例展示如何通过注册文件添加全新形式的第三方板"
     }
 }

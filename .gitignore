@@ -7,3 +7,6 @@
 # Build files
 translations/
 
+# npm file
+node_modules/
+
