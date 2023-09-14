@@ -17,7 +17,7 @@ const moreComments = formatMessage => ({
     blocks: 'blocks.js',
     generator: 'generator.js',
     toolbox: 'toolbox.js',
-    msg: 'msg.js',
+    translations: 'translations.js',
     official: true,
     tags: ['other'],
     helpLink: 'https://wiki.openblock.cc'

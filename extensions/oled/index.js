@@ -14,7 +14,7 @@ const oled = formatMessage => ({
     blocks: 'blocks.js',
     generator: 'generator.js',
     toolbox: 'toolbox.js',
-    msg: 'msg.js',
+    translations: 'translations.js',
     library: 'lib',
     official: true,
     tags: ['display'],
