@@ -29,6 +29,7 @@ const deviceDemo2 = formatMessage => ({
         id: 'deviceDemo2.connectingMessage',
         default: 'Connecting'
     }),
+    translations: 'translations.js',
     programMode: ['realtime', 'upload'],
     programLanguage: ['block', 'c', 'cpp', 'microPython'],
     tags: ['kit'],
@@ -39,8 +40,7 @@ const deviceDemo2Arduino = formatMessage => {
     const device = deviceDemo2(formatMessage);
     device.deviceId = 'arduinoDeviceDemo2';
     device.type = 'arduino';
-    device.register = 'arduinoDeviceDemo2.js';
-    device.translations = 'arduinoTranslations.js';
+    device.main = 'arduinoDeviceDemo2.js';
     device.arduinoData = 'arduinoData';
     device.firmware = 'firmwares/arduinoDeviceDemo2.hex';
     device.defaultBaudRate = '9600';
@@ -57,8 +57,7 @@ const deviceDemo2MicroPython = formatMessage => {
     const device = deviceDemo2(formatMessage);
     device.deviceId = 'microPythonDeviceDemo2';
     device.type = 'microPython';
-    device.register = 'microPythonDeviceDemo2.js';
-    device.translations = 'microPythonTranslations.js';
+    device.main = 'microPythonDeviceDemo2.js';
     device.firmware = 'firmwares/esp32-20220117-v1.18.bin';
     device.defaultBaudRate = '115200';
     device.programMode = ['upload'];
