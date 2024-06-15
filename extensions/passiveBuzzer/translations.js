@@ -24,89 +24,10 @@ function getInterfaceTranslations () {
 }
 
 function registerScratchExtensionTranslations () {
-    return {
-        "en": {
-            "passiveBuzzer.ringtonesMenu.connection": "connection",
-            "passiveBuzzer.ringtonesMenu.disconnet": "disconnet",
-            "passiveBuzzer.ringtonesMenu.buttonPushed": "button pushed",
-            "passiveBuzzer.ringtonesMenu.mode1": "mode1",
-            "passiveBuzzer.ringtonesMenu.mode2": "mode2",
-            "passiveBuzzer.ringtonesMenu.mode3": "mode3",
-            "passiveBuzzer.ringtonesMenu.surprise": "surprise",
-            "passiveBuzzer.ringtonesMenu.OhOoh": "OhOoh",
-            "passiveBuzzer.ringtonesMenu.OhOoh2": "OhOoh2",
-            "passiveBuzzer.ringtonesMenu.cuddly": "cuddly",
-            "passiveBuzzer.ringtonesMenu.sleeping": "sleeping",
-            "passiveBuzzer.ringtonesMenu.happy": "happy",
-            "passiveBuzzer.ringtonesMenu.superHappy": "super happy",
-            "passiveBuzzer.ringtonesMenu.happyShort": "happy short",
-            "passiveBuzzer.ringtonesMenu.sad": "sad",
-            "passiveBuzzer.ringtonesMenu.confused": "confused",
-            "passiveBuzzer.ringtonesMenu.fart1": "fart1",
-            "passiveBuzzer.ringtonesMenu.fart2": "fart2",
-            "passiveBuzzer.ringtonesMenu.fart3": "fart3",
-            "passiveBuzzer.categoryName": "Passive Buzzer",
-            "passiveBuzzer.init": "init passive buzzer pin [PIN]",
-            "passiveBuzzer.playToneForBeat": "play tone [FREQ] for [TIME] beat",
-            "passiveBuzzer.setTempo": "set tempo to (bpm) [BPM]",
-            "passiveBuzzer.playRingtone": "play ringtone [NO]"
-        },
-        "zh-cn": {
-            "passiveBuzzer.ringtonesMenu.connection": "连接",
-            "passiveBuzzer.ringtonesMenu.disconnet": "断开",
-            "passiveBuzzer.ringtonesMenu.buttonPushed": "按键按下",
-            "passiveBuzzer.ringtonesMenu.mode1": "模式1",
-            "passiveBuzzer.ringtonesMenu.mode2": "模式2",
-            "passiveBuzzer.ringtonesMenu.mode3": "模式3",
-            "passiveBuzzer.ringtonesMenu.surprise": "惊讶",
-            "passiveBuzzer.ringtonesMenu.OhOoh": "哦哦",
-            "passiveBuzzer.ringtonesMenu.OhOoh2": "哦哦2",
-            "passiveBuzzer.ringtonesMenu.cuddly": "可爱",
-            "passiveBuzzer.ringtonesMenu.sleeping": "正在睡觉",
-            "passiveBuzzer.ringtonesMenu.happy": "开心",
-            "passiveBuzzer.ringtonesMenu.superHappy": "非常开心",
-            "passiveBuzzer.ringtonesMenu.happyShort": "开心短",
-            "passiveBuzzer.ringtonesMenu.sad": "难过",
-            "passiveBuzzer.ringtonesMenu.confused": "困惑",
-            "passiveBuzzer.ringtonesMenu.fart1": "放屁1",
-            "passiveBuzzer.ringtonesMenu.fart2": "放屁2",
-            "passiveBuzzer.ringtonesMenu.fart3": "放屁3",
-            "passiveBuzzer.categoryName": "无源蜂鸣器",
-            "passiveBuzzer.init": "初始化无源蜂鸣器引脚 [PIN]",
-            "passiveBuzzer.playToneForBeat": "播放音调 [FREQ] 持续 [TIME] 节拍",
-            "passiveBuzzer.setTempo": "设置节奏为 (bpm) [BPM]",
-            "passiveBuzzer.playRingtone": "播放铃声 [NO]"
-        },
-        "zh-tw": {
-            "passiveBuzzer.ringtonesMenu.connection": "連接",
-            "passiveBuzzer.ringtonesMenu.disconnet": "斷開",
-            "passiveBuzzer.ringtonesMenu.buttonPushed": "按鍵按下",
-            "passiveBuzzer.ringtonesMenu.mode1": "模式1",
-            "passiveBuzzer.ringtonesMenu.mode2": "模式2",
-            "passiveBuzzer.ringtonesMenu.mode3": "模式3",
-            "passiveBuzzer.ringtonesMenu.surprise": "驚訝",
-            "passiveBuzzer.ringtonesMenu.OhOoh": "哦哦",
-            "passiveBuzzer.ringtonesMenu.OhOoh2": "哦哦2",
-            "passiveBuzzer.ringtonesMenu.cuddly": "可愛",
-            "passiveBuzzer.ringtonesMenu.sleeping": "正在睡覺",
-            "passiveBuzzer.ringtonesMenu.happy": "開心",
-            "passiveBuzzer.ringtonesMenu.superHappy": "非常開心",
-            "passiveBuzzer.ringtonesMenu.happyShort": "開心短",
-            "passiveBuzzer.ringtonesMenu.sad": "難過",
-            "passiveBuzzer.ringtonesMenu.confused": "困惑",
-            "passiveBuzzer.ringtonesMenu.fart1": "放屁1",
-            "passiveBuzzer.ringtonesMenu.fart2": "放屁2",
-            "passiveBuzzer.ringtonesMenu.fart3": "放屁3",
-            "passiveBuzzer.categoryName": "無源蜂鳴器",
-            "passiveBuzzer.init": "初始化無源蜂鳴器管腳 [PIN]",
-            "passiveBuzzer.playToneForBeat": "播放音調 [FREQ] 持續 [TIME] 節拍",
-            "passiveBuzzer.setTempo": "設置節奏為 (bpm) [BPM]",
-            "passiveBuzzer.playRingtone": "播放鈴聲 [NO]"
-        }
-    };
+    return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "PASSIVEBUZZER_CATEGORY": "Passive Buzzer",

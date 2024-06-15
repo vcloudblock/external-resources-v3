@@ -15,8 +15,5 @@ module.exports = [
     // Third party
     'deviceDemo_esp32',
     'deviceDemo_arduinoEsp32',
-    'deviceDemo_microPythonEsp32',
-    'deviceDemo2',
-    'arduinoDeviceDemo2',
-    'microPythonDeviceDemo2'
+    'deviceDemo_microPythonEsp32'
 ];

@@ -22,6 +22,7 @@ const deviceDemo = formatMessage => ({
     ],
     connectionIconURL: 'assets/deviceDemo-illustration.svg',
     connectionSmallIconURL: 'assets/deviceDemo-small.svg',
+    translations: 'translations.js',
     programMode: ['realtime', 'upload'],
     defaultProgramMode: 'upload',
     programLanguage: ['block', 'c', 'cpp', 'microPython'],

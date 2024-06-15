@@ -14,7 +14,6 @@ const passiveBuzzer = formatMessage => ({
         default: 'Unlike the active buzzer, the passive buzzer can be used to make different tones of sound and play some ringtones.'
     }),
     featured: true,
-    main: 'main.js',
     blocks: 'blocks.js',
     generator: 'generator.js',
     toolbox: 'toolbox.js',

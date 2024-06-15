@@ -4,7 +4,7 @@ const ultrasonic = formatMessage => ({
         default: 'Ultrasonic'
     }),
     extensionId: 'ultrasonic',
-    version: '2.0.0',
+    version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'Liang',
@@ -14,7 +14,6 @@ const ultrasonic = formatMessage => ({
         default: 'Standard ultrasonic distance measurement module.'
     }),
     featured: true,
-    main: 'main.js',
     blocks: 'blocks.js',
     generator: 'generator.js',
     toolbox: 'toolbox.js',
