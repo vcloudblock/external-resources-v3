@@ -14,6 +14,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.3.0",
     "eslint-config-scratch": "^5.0.0",
-    "openblock-resource": "^0.2.0-prerelease.20240615035816"
+    "openblock-resource": "^0.2.0-prerelease.20240619025751"
   }
 }

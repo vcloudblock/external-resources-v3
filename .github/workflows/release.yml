@@ -17,11 +17,10 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli@0.2.5
+      - run: npm i -g openblock-resource@latest
 
-      - name: Pro-process resources
+      - name: Pre-process resources
         run: |
-          opt-size
           gen-config --version=${{ github.ref_name }}
 
       - name: Get version

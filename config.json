@@ -4,11 +4,12 @@
             "provider": "github",
             "repo": "openblockcc/external-resources-v3"
         },
-        "cn" : {
+        "cn": {
             "provider": "spaces",
             "name": "openblock",
             "path": "resource",
             "region": "sgp1"
         }
-    }
+    },
+    "version": "x.x.x"
 }
