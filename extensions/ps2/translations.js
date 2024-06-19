@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "ps2.name": "PS2 Remote Control",
             "ps2.description": "PS2 wireless remote controller with 4 signal lines."
         },
+        "ru": {
+            "ps2.name": "Пульт дистанционного управления PS2",
+            "ps2.description": "Беспроводной пульт дистанционного управления PS2 с 4 сигнальными линиями."
+        },
         "zh-cn": {
             "ps2.name": "PS2 无线遥控器",
             "ps2.description": "使用4根信号线的 PS2 无线遥控器。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "PS2_CATEGORY": "PS2",
@@ -45,6 +49,26 @@ function registerBlocksMessages (Blockly) {
             "PS2_START": "start",
             "PS2_TRIANGLE": "triangle",
             "PS2_UP": "up"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "PS2_CATEGORY": "PS2",
+            "PS2_CIRCLE": "Окружность",
+            "PS2_CROSS": "Крест",
+            "PS2_DOWN": "Вниз",
+            "PS2_GETBUTTON": "PS2 %1 кнопка нажата?",
+            "PS2_GETJOYSTICK": "PS2 получить с джойстика %1",
+            "PS2_INIT": "init приемник ps2 DIN %1 DOUT %2 CS %3 CLK %4",
+            "PS2_LEFT": "Налево",
+            "PS2_READDATA": "читать данные приемника PS2",
+            "PS2_RIGHT": "Направо",
+            "PS2_SELECT": "Выбор",
+            "PS2_SQUARE": "Квадрат",
+            "PS2_START": "Старт",
+            "PS2_TRIANGLE": "Треугольник",
+            "PS2_UP": "Вверх"
         }
     );
 

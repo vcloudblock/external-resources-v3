@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "rgbLedStrip.name": "RGB LED Strip",
             "rgbLedStrip.description": "Single-wire-based RGB LED pixels and strip."
         },
+        "ru": {
+            "rgbLedStrip.name": "RGB-светодиодная лента",
+            "rgbLedStrip.description": "Светодиодные RGB-пиксели и лента на основе одножильных проводов."
+        },
         "zh-cn": {
             "rgbLedStrip.name": "RGB LED 灯条",
             "rgbLedStrip.description": "基于单总线的 RGB LED 的单个像素或灯条。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "RGBLEDSTRIP_CATEGORY": "RGB LED Strip",
@@ -38,6 +42,19 @@ function registerBlocksMessages (Blockly) {
             "RGBLEDSTRIP_SETBRIGHTNESS": "set rgb led brightness %1",
             "RGBLEDSTRIP_SETPIXELCOLOR": "rgb led set pixel %1 color %2",
             "RGBLEDSTRIP_SHOW": "refresh rgb led display"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "RGBLEDSTRIP_CATEGORY": "Светодиодная лента RGB",
+            "RGBLEDSTRIP_CLEAR": "очистить все светодиоды rgb",
+            "RGBLEDSTRIP_COLOR": "цвет RGB ленты R %1 G %2 B %3",
+            "RGBLEDSTRIP_FILL": "заливка RGB от пикселя %1 длиной %2 цвет %3",
+            "RGBLEDSTRIP_INIT": "инициализировать RGB ленту %1 пин %2",
+            "RGBLEDSTRIP_SETBRIGHTNESS": "установить яркость светодиодной ленты в %1",
+            "RGBLEDSTRIP_SETPIXELCOLOR": "установить пиксель RGB ленты %1 цвет %2",
+            "RGBLEDSTRIP_SHOW": "обновить светодиодный rgb-дисплей"
         }
     );
 

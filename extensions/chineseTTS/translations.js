@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "chineseTTS.name": "Chinese TTS",
             "chineseTTS.description": "Text to speech module based on SYN6288, support Chinese and English letters and numbers."
         },
+        "ru": {
+            "chineseTTS.name": "Перевод текста в речь на китайском",
+            "chineseTTS.description": "Модуль преобразования текста в речь на основе SYN6288, поддерживает китайские и английские буквы и цифры."
+        },
         "zh-cn": {
             "chineseTTS.name": "中文 TTS",
             "chineseTTS.description": "基于 SYN6288 的语音合成模块, 支持中文、英文字母以及数字。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "CHINESETTS_CATEGORY": "Chinese TTS",
@@ -40,6 +44,21 @@ function registerBlocksMessages (Blockly) {
             "CHINESETTS_SETSPEECHRATE": "chinese TTS module set speech rate %1",
             "CHINESETTS_SETVOLUME": "chinese TTS module set volume %1",
             "CHINESETTS_STATE_OFF": "off"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "CHINESETTS_CATEGORY": "Модуль текст-в-речь на китайском",
+            "CHINESETTS_INIT": "Инициализировать модуль текст-в-речь на китайском пины RX %1 TX %2",
+            "CHINESETTS_PLAYSOUND": "Модуль текст-в-речь на китайском проиграет звук %1",
+            "CHINESETTS_PLAYSOUNDUNTILLFINISH": "Модуль текст-в-речь на китайском проиграет звук %1 до конца",
+            "CHINESETTS_SAY": "Модуль текст-в-речь на китайском скажет %1",
+            "CHINESETTS_SAYUNTILLFINISH": "Модуль текст-в-речь на китайском скажет %1 до конка",
+            "CHINESETTS_SETPOWERONPROMPT": "Модулю текст-в-речь на китайском установить звук включения подсказки %1",
+            "CHINESETTS_SETSPEECHRATE": "Модулю текст-в-речь на китайском установить скорость речи %1",
+            "CHINESETTS_SETVOLUME": "Модулю текст-в-речь на китайском установить громкость %1",
+            "CHINESETTS_STATE_OFF": "Выключить"
         }
     );
 

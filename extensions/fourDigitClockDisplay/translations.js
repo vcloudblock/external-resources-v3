@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "fourDigitClockDisplay.name": "4-Digit Clock Display",
             "fourDigitClockDisplay.description": "4-digit clock display module based on TM1637."
         },
+        "ru": {
+            "fourDigitClockDisplay.name": "4-разрядный индикатор для часов",
+            "fourDigitClockDisplay.description": "4-разрядный индикатор для часов на базе TM1637."
+        },
         "zh-cn": {
             "fourDigitClockDisplay.name": "4位时钟数码管",
             "fourDigitClockDisplay.description": "基于 TM1637 的4位时钟数码管。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "FOURDIGITCLOCKDISPLAY_CATEGORY": "4-Digit Clock Display",
@@ -41,6 +45,22 @@ function registerBlocksMessages (Blockly) {
             "FOURDIGITCLOCKDISPLAY_SETPOINT_TOOLTIP": "It will take effect after the next update of the display.",
             "FOURDIGITCLOCKDISPLAY_STATE_OFF": "off",
             "FOURDIGITCLOCKDISPLAY_STATE_ON": "on"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "FOURDIGITCLOCKDISPLAY_CATEGORY": "4-значный дисплей часов",
+            "FOURDIGITCLOCKDISPLAY_CLEAR": "Очистить 4-значный дисплей часов",
+            "FOURDIGITCLOCKDISPLAY_DISPLAY": "Отобразить число %1 как бит %2 на 4-разрядном дисплее часов",
+            "FOURDIGITCLOCKDISPLAY_DISPLAYNUMBER": "Отобразить число %1 на 4-разрядном дисплее часов",
+            "FOURDIGITCLOCKDISPLAY_DISPLAYSTRING": "Отобразить строку %1 на 4-разрядном дисплее часов",
+            "FOURDIGITCLOCKDISPLAY_INIT": "Инициализировать 4-разрядный дисплей часов DIO %1 CLK %2",
+            "FOURDIGITCLOCKDISPLAY_SETBRIGHTNESS": "установить яркость 4-разрядного дисплея часов в %1",
+            "FOURDIGITCLOCKDISPLAY_SETPOINT": "Отобразить точку %1 на 4-разрядном дисплее часов",
+            "FOURDIGITCLOCKDISPLAY_SETPOINT_TOOLTIP": "Это вступит в силу после следующего обновления дисплея.",
+            "FOURDIGITCLOCKDISPLAY_STATE_OFF": "Выключить",
+            "FOURDIGITCLOCKDISPLAY_STATE_ON": "Включить"
         }
     );
 

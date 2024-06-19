@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "moreComments.name": "More Comments",
             "moreComments.description": "Allows you to add comments in the form of blocks to increase program readability."
         },
+        "ru": {
+            "moreComments.name": "Больше комментариев",
+            "moreComments.description": "Позволяет добавлять комментарии в виде блоков для повышения читабельности программы."
+        },
         "zh-cn": {
             "moreComments.name": "更多注释",
             "moreComments.description": "让你能够以积木块的形式添加注释来增加程序的可读性。"
@@ -27,12 +31,20 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "MORECOMMENTS_BRANCHBLOCK": "comments: %1",
             "MORECOMMENTS_CATEGORY": "More Comments",
             "MORECOMMENTS_COMMANDBLOCK": "comments: %1"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "MORECOMMENTS_BRANCHBLOCK": "комментарии: %1",
+            "MORECOMMENTS_CATEGORY": "Еще комментарии",
+            "MORECOMMENTS_COMMANDBLOCK": "комментарии: %1"
         }
     );
 

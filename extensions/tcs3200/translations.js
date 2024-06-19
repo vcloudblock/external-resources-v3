@@ -10,6 +10,9 @@ function getInterfaceTranslations () {
         "en": {
             "tcs3200.description": "Color sensor module based on TCS3200."
         },
+        "ru": {
+            "tcs3200.description": "Модуль датчика цвета на базе TCS3200."
+        },
         "zh-cn": {
             "tcs3200.description": "基于 TCS3200 的颜色传感器模块。"
         },
@@ -24,7 +27,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "TCS3200_CALIBRATEBLACK": "tcs3200 calibrate black",
@@ -37,6 +40,21 @@ function registerBlocksMessages (Blockly) {
             "TCS3200_INIT": "init tcs3200 pin S0 %1 S1 %2 S2 %3 S3 %4 S5 %5",
             "TCS3200_INIT_TOOLTIP": "The out pin is fixed: Arduino Uno pin 5, Arduino Leonardo pin 12, Arduino Mega pin 47",
             "TCS3200_MEASURECOLOR": "tcs3200 measure color"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "TCS3200_CALIBRATEBLACK": "tcs3200 калибровать черный",
+            "TCS3200_CALIBRATEWHITE": "tcs3200 калибровать белый",
+            "TCS3200_CATEGORY": "TCS3200",
+            "TCS3200_COLOR_BLUE": "синий",
+            "TCS3200_COLOR_GREEN": "зеленый",
+            "TCS3200_COLOR_RED": "красный",
+            "TCS3200_GETCOLORVALUE": "tcs3200 получить %1  значение",
+            "TCS3200_INIT": "инициализировать tcs3200 пины S0 %1 S1 %2 S2 %3 S3 %4 S5 %5",
+            "TCS3200_INIT_TOOLTIP": "Выходной контакт фиксирован: Arduino Uno, контакт 5, Arduino Leonardo, контакт 12, Arduino Mega, контакт 47.",
+            "TCS3200_MEASURECOLOR": "tcs3200 измерить цвет"
         }
     );
 

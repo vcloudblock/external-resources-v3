@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "max30102.name": "MAX30102 Sensor",
             "max30102.description": "Blood oxygen and heart rate detection module based on MAX30102."
         },
+        "ru": {
+            "max30102.name": "Датчик MAX30102 ",
+            "max30102.description": "Модуль определения кислорода в крови и пульса на базе MAX30102."
+        },
         "zh-cn": {
             "max30102.name": "MAX30102 传感器",
             "max30102.description": "基于 MAX30102 的血氧心跳探测模块。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "MAX30102_CATEGORY": "MAX30102",
@@ -36,6 +40,17 @@ function registerBlocksMessages (Blockly) {
             "MAX30102_INIT": "init max30102",
             "MAX30102_IRVALUE": "max30102 IR value",
             "MAX30102_ISTOUCHED": "max30102 is touched?"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "MAX30102_CATEGORY": "MAX30102",
+            "MAX30102_GETDATA": "получить дату с max30102",
+            "MAX30102_HEARTBEAT": "max30102 количество ударов сердца в минуту",
+            "MAX30102_INIT": "инициализировать max30102",
+            "MAX30102_IRVALUE": "max30102 значение IR",
+            "MAX30102_ISTOUCHED": "коснулся max30102?"
         }
     );
 

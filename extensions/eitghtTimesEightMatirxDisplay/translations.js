@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "eitghtTimesEightMatirxDisplay.name": "8x8 Matrix Display",
             "eitghtTimesEightMatirxDisplay.description": "8x8 matrix display module based on MAX7219."
         },
+        "ru": {
+            "eitghtTimesEightMatirxDisplay.name": "Матричный дисплей 8x8",
+            "eitghtTimesEightMatirxDisplay.description": "Матричный дисплейный модуль 8x8 на базе MAX7219."
+        },
         "zh-cn": {
             "eitghtTimesEightMatirxDisplay.name": "8x8点阵屏",
             "eitghtTimesEightMatirxDisplay.description": "基于MAX7219的8x8点阵屏。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "EITGHTTIMESEIGHTMATIRXDISPLAY_CATEGORY": "8x8 Matrix Display",
@@ -43,6 +47,24 @@ function registerBlocksMessages (Blockly) {
             "EITGHTTIMESEIGHTMATIRXDISPLAY_SETROTATION": "8x8 martix display set rotation %1",
             "EITGHTTIMESEIGHTMATIRXDISPLAY_SHOWCHAR": "8x8 martix display show char %1 color %2",
             "EITGHTTIMESEIGHTMATIRXDISPLAY_SHOWNUMBER": "8x8 martix display show number %1 color %2"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_CATEGORY": "Матричный дисплей 8x8",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK": "Черный",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED": "Красный",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_DRAWLINE": "На матрице 8x8 нарисовать линию из (x0: %1 y0: %2) в (x1: %3 y1: %4) цвет %5",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_DRAWPIXEL": "На матричном дисплее 8x8 нарисовать пиксель в точке (x: %1 y: %2) цвет %3",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_FILL": "Матричный дисплей 8х8 залить цветом %1",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_INIT": "инициализировать матричный дисплей 8x8 пин CS %1",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_INIT_TOOLTIP": "пин DIN к MOSI и CLK к SCK.",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_REFRESH": "Обновить матричный дисплей 8х8",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_SETBRIGHTNESS": "Установить яркость матричного дисплея 8х8 в %1",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_SETROTATION": "Установить вращение матричного дисплея 8х8 в %1",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_SHOWCHAR": "На матричном дисплее 8x8 отобразить символ %1 цвет %2",
+            "EITGHTTIMESEIGHTMATIRXDISPLAY_SHOWNUMBER": "На матричном дисплее 8x8 отобразить число %1 цвет %2"
         }
     );
 

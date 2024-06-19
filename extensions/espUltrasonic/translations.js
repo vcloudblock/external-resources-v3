@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "ultrasonic.name": "Ultrasonic",
             "ultrasonic.description": "Standard ultrasonic distance measurement module."
         },
+        "ru": {
+            "ultrasonic.name": "Ультразвуковой",
+            "ultrasonic.description": "Стандартный модуль ультразвукового измерения расстояния."
+        },
         "zh-cn": {
             "ultrasonic.name": "超声波",
             "ultrasonic.description": "标准的超声波测距传感器模块。"
@@ -27,11 +31,18 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "ULTRASONIC_CATEGORY": "Ultrasonic",
             "ULTRASONIC_READ_DISTANCE": "ultrasonic sensor pin TRIG %1 ECHO %2 read distance %3"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "ULTRASONIC_CATEGORY": "Ультразвуковой",
+            "ULTRASONIC_READ_DISTANCE": "пины ультразвукового датчика TRIG %1 ECHO %2 расстояние считывания %3"
         }
     );
 

@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "mfrc522.name": "MFRC-522 Module",
             "mfrc522.description": "13.56MHz radio frequency identification module using spi interface."
         },
+        "ru": {
+            "mfrc522.name": "Модуль MFRC-522",
+            "mfrc522.description": "Модуль радиочастотной идентификации 13,56 МГц с использованием интерфейса spi."
+        },
         "zh-cn": {
             "mfrc522.name": "MFRC-522 模块",
             "mfrc522.description": "使用 SPI 接口的 13.56MHz 射频识别模块。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "MFRC522_CATEGORY": "MFRC522",
@@ -48,6 +52,29 @@ function registerBlocksMessages (Blockly) {
             "MFRC522_VERIFICATIONKEY": "mfrc522 verification block %1 key is correct?",
             "MFRC522_WRITEBLOCKDATA": "mfrc522 write %1 to block %2 (type %3)",
             "MFRC522_WRITEKEYTOSECTOR": "mfrc522 write key %1 to sector %2"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "MFRC522_CATEGORY": "MFRC522",
+            "MFRC522_DATATYPE_NUBMER": "число",
+            "MFRC522_DATATYPE_STRING": "строка",
+            "MFRC522_GETBLOCKDATA": "данные блока mfrc522 (тип %1)",
+            "MFRC522_GETBLOCKDATA_TOOLTIP": "Длина строки менее 16 байт.",
+            "MFRC522_GETCARDTYPENAME": "mfrc522 получил название типа карты",
+            "MFRC522_GETCARDUID": "mfrc522 получил UID карты",
+            "MFRC522_HALT": "остановить mfrc522",
+            "MFRC522_INIT": "инициализировать mfrc522 пины CS %1 RST %2",
+            "MFRC522_ISNEWCARDPRESENT": "новая карта присутствует?",
+            "MFRC522_NUMBERTOHEXSTRING": "mfrc522 %1 в шестнадцатеричный формат",
+            "MFRC522_PRINTSECTORDATA": "mfrc522 печать данные в сектор %1",
+            "MFRC522_READBLOCKDATA": "mfrc522 прочитать блок %1",
+            "MFRC522_READCARDSERIAL": "mfrc522 успешно прочитал серийный номер карты?",
+            "MFRC522_SETKEY": "mfrc522 установить секретный ключ %1",
+            "MFRC522_VERIFICATIONKEY": "mfrc522 блок проверки %1 ключ правильный?",
+            "MFRC522_WRITEBLOCKDATA": "mfrc522 записать %1 в блок %2 (тип %3)",
+            "MFRC522_WRITEKEYTOSECTOR": "mfrc522 записать ключ %1 в сектор %2"
         }
     );
 

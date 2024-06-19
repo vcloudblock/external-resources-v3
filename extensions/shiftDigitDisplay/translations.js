@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "shiftDigitDisplay.name": "Shift Digit Display",
             "shiftDigitDisplay.description": "Digital dislapy based on 74HC595 with dynamic scanning display."
         },
+        "ru": {
+            "shiftDigitDisplay.name": "Цифровой дисплей со сдвигом",
+            "shiftDigitDisplay.description": "Цифровой дисплей на базе 74HC595 с динамической разверткой дисплея."
+        },
         "zh-cn": {
             "shiftDigitDisplay.name": "移位数码管",
             "shiftDigitDisplay.description": "使用动态扫描方式显示的基于 74HC595 的数码管。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "SHIFTDIGITDISPLAY_CATEGORY": "Shift Digit Display",
@@ -36,6 +40,17 @@ function registerBlocksMessages (Blockly) {
             "SHIFTDIGITDISPLAY_INIT": "init shift digit display length %1 pin SCLK %2 RCLK %3 DIO %4",
             "SHIFTDIGITDISPLAY_REFRESH_TOOLTIP": "This command will block the program.",
             "SHIFTDIGITDISPLAY_SHOW": "shift digit display show for %1 ms"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "SHIFTDIGITDISPLAY_CATEGORY": "Цифровой дисплей со сдвигом\n ",
+            "SHIFTDIGITDISPLAY_DISPLAYNUMBER": "цифровому индикатору отобразить число %1 десятичное %2",
+            "SHIFTDIGITDISPLAY_DISPLAYSTRING": "цифровому индикатору отобразить строку %1",
+            "SHIFTDIGITDISPLAY_INIT": "инициализировать сдвиговый дисплей %1 пин SCLK %2 RCLK %3 DIO %4",
+            "SHIFTDIGITDISPLAY_REFRESH_TOOLTIP": "Эта команда заблокирует программу.",
+            "SHIFTDIGITDISPLAY_SHOW": "цифровому индикатору отобразить на %1 мс"
         }
     );
 

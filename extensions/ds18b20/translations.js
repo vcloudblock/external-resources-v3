@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "ds18b20.name": "DS18B20 Sensor",
             "ds18b20.description": "Single bus digital temperature sensor based on DS18B20."
         },
+        "ru": {
+            "ds18b20.name": "Датчик DS18B20 ",
+            "ds18b20.description": "Цифровой датчик температуры DS18B20"
+        },
         "zh-cn": {
             "ds18b20.name": "DS18B20 传感器",
             "ds18b20.description": "基于 DS18B20 的单总线数字温度传感器。"
@@ -27,13 +31,22 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "DS18B20_CATEGORY": "DS18B20",
             "DS18B20_GETTEMPERATURE": "ds18b20 %1 temperatures %2",
             "DS18B20_INIT": "init ds18b20 pin %1 quantity %2",
             "DS18B20_READALLTEMPERATURES": "ds18b20 read all temperatures"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "DS18B20_CATEGORY": "DS18B20",
+            "DS18B20_GETTEMPERATURE": "ds18b20 %1 температуры %2",
+            "DS18B20_INIT": "инициализировать ds18b20 пин %1 количество %2",
+            "DS18B20_READALLTEMPERATURES": "ds18b20 считать все температуры"
         }
     );
 

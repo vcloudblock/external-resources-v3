@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "softwareSerial.name": "Software Serial",
             "softwareSerial.description": "Allow serial communication on other digital pins of the Arduino."
         },
+        "ru": {
+            "softwareSerial.name": "Серийный номер программного обеспечения",
+            "softwareSerial.description": "Разрешите последовательную связь на других цифровых выводах Arduino."
+        },
         "zh-cn": {
             "softwareSerial.name": "软件串口",
             "softwareSerial.description": "使 Arduino 可以使用其他数字口进行串口通信。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "SOFTWARESERIAL_AVAILABLE": "software serial %1 available data length",
@@ -37,6 +41,18 @@ function registerBlocksMessages (Blockly) {
             "SOFTWARESERIAL_PRINT": "software serial %1 print %2 %3",
             "SOFTWARESERIAL_READABYTE": "software serial %1 read a byte",
             "SOFTWARESERIAL_WARP": "warp"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "SOFTWARESERIAL_AVAILABLE": "доступная длина данных в последовательном порту %1",
+            "SOFTWARESERIAL_BEGIN": "последовательный порт %1 пины RX %2 TX %3 скорость передачи %4",
+            "SOFTWARESERIAL_CATEGORY": "последовательный порт",
+            "SOFTWARESERIAL_NOWARP": "не деформировать",
+            "SOFTWARESERIAL_PRINT": "В последовательный порт %1 печатать %2 %3",
+            "SOFTWARESERIAL_READABYTE": "Считать байт из последовательного порта %1",
+            "SOFTWARESERIAL_WARP": "деформировать"
         }
     );
 

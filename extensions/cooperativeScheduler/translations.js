@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "cooperativeScheduler.name": "Cooperative Scheduler",
             "cooperativeScheduler.description": "Allow Arduino run multiple tasks."
         },
+        "ru": {
+            "cooperativeScheduler.name": "Совместный планировщик",
+            "cooperativeScheduler.description": "Разрешить Arduino выполнять несколько задач."
+        },
         "zh-cn": {
             "cooperativeScheduler.name": "多任务调度器",
             "cooperativeScheduler.description": "使 Arduino 可以运行多个任务。"
@@ -27,13 +31,22 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "COOPERATIVESCHEDULER_CATEGORY": "Cooperative scheduler",
             "COOPERATIVESCHEDULER_SETUP": "task %1 setup",
             "COOPERATIVESCHEDULER_SLEEP": "task delay %1 ms",
             "COOPERATIVESCHEDULER_START": "start cooperative scheduler"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "COOPERATIVESCHEDULER_CATEGORY": "Совместный планировщик",
+            "COOPERATIVESCHEDULER_SETUP": "настройка задачи %1",
+            "COOPERATIVESCHEDULER_SLEEP": "задержка задачи %1 мс",
+            "COOPERATIVESCHEDULER_START": "запустить совместный планировщик"
         }
     );
 

@@ -10,6 +10,9 @@ function getInterfaceTranslations () {
         "en": {
             "u8g2.description": "U8g2 is a general graphics library for multiple screens, which is suitable for LCD (base on ST7920) or OLED (base on SSD1306) screens."
         },
+        "ru": {
+            "u8g2.description": "U8g2 — это общая графическая библиотека для нескольких экранов, которая подходит для ЖК-экранов (на базе ST7920) или OLED (на базе SSD1306)."
+        },
         "zh-cn": {
             "u8g2.description": "U8g2 是一个适配多种屏幕的通用图形库，适用于 LCD（基于ST7920）或 OLED（基于SSD1306）屏幕。"
         },
@@ -24,7 +27,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "U8G2_12832OLED_INIT": "init u8g2 128x32 oled pin SCL %1 SDA %2",
@@ -79,6 +82,63 @@ function registerBlocksMessages (Blockly) {
             "U8G2_STYLE_HORIZONTAL": "horizontal",
             "U8G2_STYLE_NOFILLED": "no-filled",
             "U8G2_STYLE_VERTICAL": "vertical"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "U8G2_12832OLED_INIT": "инициализировать u8g2 128x32 oled дисплей пины SCL %1 SDA %2",
+            "U8G2_12864LCD_INIT": "инициализировать u8g2 128x64 ЖК дисплей пины RS (CS) %1 R/W (DATA) %2 E (CLK) %3",
+            "U8G2_12864LCD_INIT_TOOLTIP": "Поддерживается только ST7920 контроллер ЖК дисплея",
+            "U8G2_12864OLED_INIT": "инициализировать u8g2 128x64 oled дисплей пины SCL %1 SDA %2",
+            "U8G2_CATEGORY": "U8G2",
+            "U8G2_CLEAR": "очистить дисплей u8g2",
+            "U8G2_COLOR_COLORED": "Цветной",
+            "U8G2_COLOR_NOCOLORED": "Не цветной",
+            "U8G2_DISPLAYROTATION_MIRROR": "зеркало",
+            "U8G2_DRAWCIRCLE": "на дисплее u8g2 нарисовать %1 окружность из точки x: %2 y: %3 радиус %4 часть %5",
+            "U8G2_DRAWELLIPSE": "на дисплее u8g2 нарисовать %1 эллипс x: %2 y: %3 шириной %4 высотой %5 часть %6",
+            "U8G2_DRAWLINE": "на дисплее u8g2 нарисовать линию из точки x0: %1 y0: %2 в точку x1: %3 y1: %4",
+            "U8G2_DRAWPIXEL": "на дисплее u8g2 нарисовать пиксель в точке x: %1 y: %2",
+            "U8G2_DRAWRECTANGLE": "на дисплее u8g2 нарисовать %1 прямоугольник из точки  x: %2 y: %3 шириной %4 высотой %5",
+            "U8G2_DRAWROUNDRECTANGLE": "на дисплее u8g2 нарисовать %1 закругленный прямоугольник из точки x: %2 y: %3 шириной %4 высотой %5 радиус закругления %6",
+            "U8G2_DRAWSTRING": "на дисплее u8g2 написать строку %1  из точки x: %2 y: %3",
+            "U8G2_DRAWTRIANGLE": "на дисплее u8g2 нарисовать треугольник по точкам x0: %1 y0: %2, x1: %3 y1: %4, x2: %5 y2: %6",
+            "U8G2_DRAWVHLINE": "на дисплее u8g2 нарисовать %1 линию из точки x: %2 y: %3 длиной %4",
+            "U8G2_FONT_10X20": "X11 10x20",
+            "U8G2_FONT_11X11C": "WQY 11x11 (с поддержкой китайского языка)",
+            "U8G2_FONT_13X13C": "WQY 13x13 (с поддержкой китайского языка)",
+            "U8G2_FONT_14X14C": "WQY 14x14 (с поддержкой китайского языка)",
+            "U8G2_FONT_15X15C": "WQY 15x15 (с поддержкой китайского языка)",
+            "U8G2_FONT_16X16C": "WQY 16x16 (с поддержкой китайского языка)",
+            "U8G2_FONT_4X6": "X11 4x6",
+            "U8G2_FONT_5X7": "X11 5x7",
+            "U8G2_FONT_5X8": "X11 5x8",
+            "U8G2_FONT_6X10": "X11 3x10",
+            "U8G2_FONT_6X12": "X11 6x12",
+            "U8G2_FONT_6X13": "X11 6x13",
+            "U8G2_FONT_7X13": "X11 7x13",
+            "U8G2_FONT_7X14": "X11 7x14",
+            "U8G2_FONT_8X13": "X11 8x13",
+            "U8G2_FONT_9X15": "X11 9x15",
+            "U8G2_FONT_9X18": "X11 9x18",
+            "U8G2_OLED_INIT_TOOLTIP": "поддерживается только SSD1306 контроллер oled дисплея ",
+            "U8G2_PART_ALL": "все",
+            "U8G2_PART_LOWER_LEFT": "нижний левый",
+            "U8G2_PART_LOWER_RIGHT": "нижний правый",
+            "U8G2_PART_UPPER_LEFT": "верхний левый",
+            "U8G2_PART_UPPER_RIGHT": "верхний правый",
+            "U8G2_PRINT": "на дисплее u8g2 напечатать %1",
+            "U8G2_REFRESH": "обновить дисплей u8g2",
+            "U8G2_SETCURSOR": "на дисплее u8g2 установить курсор в позицию x: %1 y: %2",
+            "U8G2_SETDISPLAYROTATION": "установить угол поворота дисплея u8g2 в %1",
+            "U8G2_SETDRAWCOLOR": "дисплею u8g2 установить цвет рисования %1",
+            "U8G2_SETFONT": "на дисплее u8g2 установить шрифт %1 направление %2",
+            "U8G2_SETFONT_TOOLTIP": "Ограничено размером ПЗУ, поддерживаются только некоторые китайские символы. Вы можете попробовать ввести их. Если не поддерживает, они не будут отображаться",
+            "U8G2_STYLE_FILLED": "заполненный",
+            "U8G2_STYLE_HORIZONTAL": "горизонтально",
+            "U8G2_STYLE_NOFILLED": "незаполненный",
+            "U8G2_STYLE_VERTICAL": "Вертикальный"
         }
     );
 

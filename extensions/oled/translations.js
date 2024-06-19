@@ -10,6 +10,9 @@ function getInterfaceTranslations () {
         "en": {
             "oled.description": "I2C oled display based on SSD1306 drivers."
         },
+        "ru": {
+            "oled.description": "OLED-дисплей I2C на основе драйверов SSD1306."
+        },
         "zh-cn": {
             "oled.description": "基于 SSD1306 驱动的 I2C oled 显示屏。"
         },
@@ -24,7 +27,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "OLED_CATEGORY": "OLED",
@@ -54,6 +57,38 @@ function registerBlocksMessages (Blockly) {
             "OLED_SETTEXT": "set oled text size %1 color %2 background color %3",
             "OLED_STARTSCROLL": "oled start scroll %1 y0: %2 y1: %3",
             "OLED_STOPSCROLL": "oled stop scroll"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "OLED_CATEGORY": "OLED",
+            "OLED_CLEAR": "Очистить OLED-дисплей",
+            "OLED_COLOR_BLACK": "Черный",
+            "OLED_COLOR_INVERSE": "Инверсия",
+            "OLED_COLOR_WHITE": "Белый",
+            "OLED_DRAWCIRCLE": "нарисовать окружность на OLED-дисплее из точки (x: %1 y: %2) радиус %3 цвет %4",
+            "OLED_DRAWLINE": "нарисовать линию на OLED-дисплее из точки (x0: %1 y0: %2) в (x1: %3 y1:%4) цвет %5",
+            "OLED_DRAWRECT": "нарисовать прямоугольник на OLED-дисплее из точки (x: %1 y: %2) ширина %3 высота %4 цвет %5",
+            "OLED_DRAWROUNDRECT": "нарисовать скругленный прямоугольник на OLED-дисплее из точки (x: %1 y: %2) ширина %3 высота %4 радиус %5 цвет %6",
+            "OLED_DRAWTRIANGLE": "нарисовать треугольник на OLED-дисплее с углами (x: %1 y: %2) (x1: %3 y1: %4) (x2: %5 y2: %6)  цвет %7",
+            "OLED_EOL_NOWARP": "Не переносить",
+            "OLED_EOL_WARP": "Переносить",
+            "OLED_FILLCIRCLE": "закрасить окружность на OLED-дисплее из точки (x: %1 y: %2) радиус %3 цвет %4",
+            "OLED_FILLRECT": "закрасить прямоугольник на OLED-дисплее из точки (x: %1 y: %2) ширина %3 высота %4 цвет %5",
+            "OLED_FILLROUNDRECT": "закрасить скругленный прямоугольник на OLED-дисплее из точки (x: %1 y: %2) ширина %3 высота %4 радиус %5 цвет %6",
+            "OLED_FILLTRIANGLE": "закрасить треугольник на OLED-дисплее с углами (x: %1 y: %2) (x1: %3 y1: %4) (x2: %5 y2: %6) цвет %7",
+            "OLED_INIT": "инициализация OLED-дисплея %1 высота %2 адрес I2C %3",
+            "OLED_PRINT": "напечатать %1 %2 на OLED-дисплее ",
+            "OLED_REFRESH": "Обновить OLED-дисплей",
+            "OLED_SCROLL_DIAGLEFT": "По диагонали налево",
+            "OLED_SCROLL_DIAGRIGHT": "По диагонали направо",
+            "OLED_SCROLL_LEFT": "Налево",
+            "OLED_SCROLL_RIGHT": "Направо",
+            "OLED_SETCURSOR": "установить курсор на OLED-дисплее в (x: %1 y: %2)",
+            "OLED_SETTEXT": "установить размер текста OLED-дисплея %1 цвет %2 цвет фона %3",
+            "OLED_STARTSCROLL": "oled начало прокрутки %1 y0: %2 y1: %3",
+            "OLED_STOPSCROLL": "Остановить прокрутку OLED-дисплея"
         }
     );
 

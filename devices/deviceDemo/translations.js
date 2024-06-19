@@ -9,22 +9,34 @@ function getInterfaceTranslations () {
     return {
         "en": {
             "deviceDemo.name": "Third Party Device Demo",
-            "deviceDemo.description": "An example showing how to add a third-party board.",
-            "deviceDemo.connectingMessage": "Connecting"
+            "deviceDemo.description": "An example showing how to add a third-party board by inheriting a built-in board."
+        },
+        "ru": {
+            "deviceDemo.name": "Third Party Device Demo",
+            "deviceDemo.description": "An example showing how to add a third-party board by inheriting a built-in board."
         },
         "zh-cn": {
-            "deviceDemo.name": "第三方设备演示",
-            "deviceDemo.description": "演示如何添加第三方控制板的示例。",
-            "deviceDemo.connectingMessage": "连接中"
+            "deviceDemo.name": "Third Party Device Demo",
+            "deviceDemo.description": "An example showing how to add a third-party board by inheriting a built-in board."
         },
         "zh-tw": {
-            "deviceDemo.name": "第三方裝置示範",
-            "deviceDemo.description": "示範如何新增第三方控制板的範例。",
-            "deviceDemo.connectingMessage": "連接中"
+            "deviceDemo.name": "Third Party Device Demo",
+            "deviceDemo.description": "An example showing how to add a third-party board by inheriting a built-in board."
         }
-    };
+    }
+    ;
+}
+
+function registerScratchExtensionTranslations () {
+    return {};
+}
+
+function registerBlocksMessages (Blockly) {
+    return Blockly;
 }
 
 if (typeof module !== 'undefined') {
     module.exports = {getInterfaceTranslations};
 }
+exports = registerScratchExtensionTranslations;
+exports = registerBlocksMessages;

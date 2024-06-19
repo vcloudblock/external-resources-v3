@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "sdCard.name": "SD Card Module",
             "sdCard.description": "Save or read your data in SD card."
         },
+        "ru": {
+            "sdCard.name": "Модуль SD карты",
+            "sdCard.description": "Сохраните или прочитайте свои данные на SD-карте."
+        },
         "zh-cn": {
             "sdCard.name": "SD卡模块",
             "sdCard.description": "在SD卡中保存和读取你的数据。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "SDCARD_CATEGORY": "SD Card",
@@ -45,6 +49,26 @@ function registerBlocksMessages (Blockly) {
             "SDCARD_OPENFILE_TOOLTIP": "If file not exists, it will be created automatically.",
             "SDCARD_PRINT": "print %1 %2 to file",
             "SDCARD_READFILEDATA": "sd card read file data"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "SDCARD_CATEGORY": "SD-карта",
+            "SDCARD_CLOSEFILE": "SD-карта закрыть файл",
+            "SDCARD_CREATEFILE": "создать файл %1 на SD-карте",
+            "SDCARD_DELETEFILE": "удалить файл %1 с SD-карты",
+            "SDCARD_EOL_NOWARP": "не деформировать",
+            "SDCARD_EOL_WARP": "деформировать",
+            "SDCARD_FILEDATAAVAILABLE": "Доступны данные файла SD-карты",
+            "SDCARD_INIT": "инициировать SD-карту на пине CS %1",
+            "SDCARD_ISFILEEXISTS": "файл %1 на SD-карте существует?",
+            "SDCARD_MODE_READ": "только для чтения",
+            "SDCARD_MODE_READWRITE": "чтение и запись",
+            "SDCARD_OPENFILE": "открыть файл %1 на SD-карте в режиме %2",
+            "SDCARD_OPENFILE_TOOLTIP": "Если файл не существует, он будет создан автоматически.",
+            "SDCARD_PRINT": "распечатать %1 %2 в файл",
+            "SDCARD_READFILEDATA": "читать данные файла с SD-карты"
         }
     );
 

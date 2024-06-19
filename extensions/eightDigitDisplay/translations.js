@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "eightDigitDisplay.name": "8-Digit Display",
             "eightDigitDisplay.description": "8-digit display module based on MAX7219."
         },
+        "ru": {
+            "eightDigitDisplay.name": "8-разрядный дисплей",
+            "eightDigitDisplay.description": "8-разрядный дисплейный модуль на базе MAX7219."
+        },
         "zh-cn": {
             "eightDigitDisplay.name": "8位数码管",
             "eightDigitDisplay.description": "基于 MAX7219 的8位数码管。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "EIGHTDIGITDISPLAY_CATEGORY": "8-Digit Display",
@@ -35,6 +39,16 @@ function registerBlocksMessages (Blockly) {
             "EIGHTDIGITDISPLAY_DISPLAYNUMBER": "8-digit display show number %1 decimal %2",
             "EIGHTDIGITDISPLAY_INIT": "init 8-digit display pin DIN %1 CS %2 CLK %3",
             "EIGHTDIGITDISPLAY_SETBRIGHTNESS": "set 8-digit display brightness %1"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "EIGHTDIGITDISPLAY_CATEGORY": "8-разрядный дисплей",
+            "EIGHTDIGITDISPLAY_CLEAR": "Очистить 8-разрядный дисплей",
+            "EIGHTDIGITDISPLAY_DISPLAYNUMBER": "8-разрядный дисплей показывает число %1 десятичный %2",
+            "EIGHTDIGITDISPLAY_INIT": "init 8-разрядный контакт дисплея DIN %1 CS %2 CLK %3",
+            "EIGHTDIGITDISPLAY_SETBRIGHTNESS": "установить яркость 8-разрядного дисплея %1"
         }
     );
 

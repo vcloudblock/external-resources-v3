@@ -10,6 +10,9 @@ function getInterfaceTranslations () {
         "en": {
             "apds9960.description": "Proximity, Light, RGB, and Gesture Sensor which uses an I2C interface."
         },
+        "ru": {
+            "apds9960.description": "Датчик приближения, света, RGB и жестов, использующий интерфейс I2C."
+        },
         "zh-cn": {
             "apds9960.description": "使用 I2C 接口的接近、灯光、RGB和手势传感器。"
         },
@@ -38,6 +41,22 @@ function registerBlocksMessages (Blockly) {
             "APDS9960_ISPROXIMITYAVAILABLE": "apds9960 color data available?",
             "APDS9960_READGESTURE": "apds9960 read gesture",
             "APDS9960_READPROXIMITY": "apds9960 read proximity"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "APDS9960_CATEGORY": "APDS9960",
+            "APDS9960_GESTURE_DOWN": "вниз",
+            "APDS9960_GESTURE_LEFT": "налево",
+            "APDS9960_GESTURE_RIGHT": "направо",
+            "APDS9960_GESTURE_UP": "вверх",
+            "APDS9960_INIT": "инициализировать apds9960",
+            "APDS9960_ISGESTURE": "apds9960 прочитать жест %1",
+            "APDS9960_ISGESTUREAVAILABLE": "Данные датчика жестов apds9960 готовы?",
+            "APDS9960_ISPROXIMITYAVAILABLE": "apds9960 доступны данные о цвете?",
+            "APDS9960_READGESTURE": "apds9960 прочитать жест",
+            "APDS9960_READPROXIMITY": "apds9960 определить расстояние"
         }
     );
 

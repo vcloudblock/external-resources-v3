@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "insertSourceCode.name": "Insert Source Code",
             "insertSourceCode.description": "Insert the source code directly into the blocks, so that professional users can realize some more advanced functions."
         },
+        "ru": {
+            "insertSourceCode.name": "Вставьте исходный код",
+            "insertSourceCode.description": "Вставьте исходный код непосредственно в блоки, чтобы профессиональные пользователи могли реализовать некоторые более продвинутые функции."
+        },
         "zh-cn": {
             "insertSourceCode.name": "插入源代码",
             "insertSourceCode.description": "将源代码直接插入积木中，让专业用户可以实现一些更高级的功能。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "INSERTSOURCECODE_BOOLEANBLOCK": "insert source code %1",
@@ -38,6 +42,19 @@ function registerBlocksMessages (Blockly) {
             "INSERTSOURCECODE_INSERTINDEFINEAREA": "insert source code %1 in define area %2",
             "INSERTSOURCECODE_INSERTININCLUDEAREA": "insert source code %1 in include area %2",
             "INSERTSOURCECODE_ROUNDBLOCK": "insert source code %1"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "INSERTSOURCECODE_BOOLEANBLOCK": "вставить исходный код %1",
+            "INSERTSOURCECODE_CATEGORY": "вставить исходный код",
+            "INSERTSOURCECODE_COMMANDBLOCK": "вставить исходный код %1 %2",
+            "INSERTSOURCECODE_DONTESCAPE": "не экранировать новую строку",
+            "INSERTSOURCECODE_ESCAPE": "экранировать новую строку",
+            "INSERTSOURCECODE_INSERTINDEFINEAREA": "вставить исходный код %1 в область определения %2",
+            "INSERTSOURCECODE_INSERTININCLUDEAREA": "вставить исходный код %1 во включаемую область %2",
+            "INSERTSOURCECODE_ROUNDBLOCK": "вставить исходный код %1"
         }
     );
 

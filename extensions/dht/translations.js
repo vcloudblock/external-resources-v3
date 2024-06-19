@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "dht.name": "DHT Sensor",
             "dht.description": "DHT Temperature and humidity sensor module."
         },
+        "ru": {
+            "dht.name": "Датчик DHT ",
+            "dht.description": "Датчик температуры и влажности DHT "
+        },
         "zh-cn": {
             "dht.name": "DHT 传感器",
             "dht.description": "DHT 温湿度传感器模块。"
@@ -27,13 +31,22 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "DHT_CATEGORY": "DHT",
             "DHT_INIT": "init dht %1 pin %2 model %3",
             "DHT_READ_HUMIDITY": "dht %1 read humidity",
             "DHT_READ_TEMPERATURE": "dht %1 read temperature %2"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "DHT_CATEGORY": "датчик температуры и влажности DHT",
+            "DHT_INIT": "инициализировать dht %1 пин %2 модель %3",
+            "DHT_READ_HUMIDITY": "dht %1 считать влажность",
+            "DHT_READ_TEMPERATURE": "dht %1 считать температуру %2"
         }
     );
 

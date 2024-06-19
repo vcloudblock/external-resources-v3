@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "passiveBuzzer.name": "Passive Buzzer",
             "passiveBuzzer.description": "Unlike the active buzzer, the passive buzzer can be used to make different tones of sound and play some ringtones."
         },
+        "ru": {
+            "passiveBuzzer.name": "Пассивный зуммер",
+            "passiveBuzzer.description": "В отличие от активного зуммера, пассивный зуммер можно использовать для создания различных тонов звука и воспроизведения некоторых мелодий звонка."
+        },
         "zh-cn": {
             "passiveBuzzer.name": "无源蜂鸣器",
             "passiveBuzzer.description": "不同于有源蜂鸣器，无源蜂鸣器可以用来播放不同音调的声音和播放铃声。"
@@ -54,6 +58,35 @@ function registerBlocksMessages (Blockly) {
             "PASSIVEBUZZER_SLEEPING": "sleeping",
             "PASSIVEBUZZER_SUPERHAPPY": "super happy",
             "PASSIVEBUZZER_SURPRISE": "surprise"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "PASSIVEBUZZER_CATEGORY": "Пассивный зуммер",
+            "PASSIVEBUZZER_CONFUSED": "Смущенный",
+            "PASSIVEBUZZER_CONNECTION": "Соединение",
+            "PASSIVEBUZZER_CUDDLY": "Приятный",
+            "PASSIVEBUZZER_DIDI": "Кнопка нажата",
+            "PASSIVEBUZZER_DISCONNECTION": "Отключить",
+            "PASSIVEBUZZER_FART1": "Выдох1",
+            "PASSIVEBUZZER_FART2": "Выдох2",
+            "PASSIVEBUZZER_FART3": "Выдох3",
+            "PASSIVEBUZZER_HAPPY": "Счастливый",
+            "PASSIVEBUZZER_HAPPYSHORT": "Немного счастлив",
+            "PASSIVEBUZZER_INIT": "Инициализировать пассивный зуммер на пине %1",
+            "PASSIVEBUZZER_MODE1": "Режим1",
+            "PASSIVEBUZZER_MODE2": "Режим2",
+            "PASSIVEBUZZER_MODE3": "Режим3",
+            "PASSIVEBUZZER_OHOOH": "Ой-ой",
+            "PASSIVEBUZZER_OHOOH2": "Ой-ой-ой",
+            "PASSIVEBUZZER_PLAYRINGTONE": "Проиграть рингтон %1",
+            "PASSIVEBUZZER_PLAYTONEFORBEAT": "Играть ноту %1  длительностью %2 ударов",
+            "PASSIVEBUZZER_SAD": "Грустный",
+            "PASSIVEBUZZER_SETTEMPO": "Установить темп в %1 ударов в минуту",
+            "PASSIVEBUZZER_SLEEPING": "Спящий",
+            "PASSIVEBUZZER_SUPERHAPPY": "Очень счастливый",
+            "PASSIVEBUZZER_SURPRISE": "Сюрприз"
         }
     );
 

@@ -10,6 +10,9 @@ function getInterfaceTranslations () {
         "en": {
             "l298n.description": "Common high power dual motor drive module."
         },
+        "ru": {
+            "l298n.description": "Общий модуль привода с двумя двигателями высокой мощности."
+        },
         "zh-cn": {
             "l298n.description": "常见的高功率双路电机驱动模块。"
         },
@@ -24,7 +27,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "L298N_BACK": "back",
@@ -33,6 +36,17 @@ function registerBlocksMessages (Blockly) {
             "L298N_INIT": "init channel %1 pin IN1 %2 IN2 %3 EN %4",
             "L298N_RUN": "channel %1 run %2 speed %3",
             "L298N_STOP": "channel %1 stop"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "L298N_BACK": "Назад",
+            "L298N_CATEGORY": "L298N",
+            "L298N_FORWARD": "Вперед",
+            "L298N_INIT": "Инициализировать канал %1 на пинах IN1 %2 IN2 %3 EN %4",
+            "L298N_RUN": "Канал %1 включить %2 скорость %3",
+            "L298N_STOP": "Канал %1 остановить"
         }
     );
 

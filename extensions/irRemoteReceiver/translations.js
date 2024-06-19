@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "irRemoteReceiver.name": "IR Remote Receiver",
             "irRemoteReceiver.description": "Receiving and decoding data in infrared carrier."
         },
+        "ru": {
+            "irRemoteReceiver.name": "ИК-пульт дистанционного управления",
+            "irRemoteReceiver.description": "Прием и декодирование данных в инфракрасном носителе."
+        },
         "zh-cn": {
             "irRemoteReceiver.name": "红外遥控接收器",
             "irRemoteReceiver.description": "接收并解码红外载波中的数据。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "IRREMOTERECEIVER_CATEGORY": "IR Remote Receiver",
@@ -35,6 +39,16 @@ function registerBlocksMessages (Blockly) {
             "IRREMOTERECEIVER_INIT": "init IR remote receiver pin %1",
             "IRREMOTERECEIVER_RECIVEDCOMMAND": "IR remote recived command",
             "IRREMOTERECEIVER_RESUME": "IR remote resume recive"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "IRREMOTERECEIVER_CATEGORY": "ИК-пульт",
+            "IRREMOTERECEIVER_DATAAVAILABLE": "Доступны данные ИК-пульта?",
+            "IRREMOTERECEIVER_INIT": "Инициализировать ИК-пульт на пине %1",
+            "IRREMOTERECEIVER_RECIVEDCOMMAND": "Полученная команда с ИК-пульта",
+            "IRREMOTERECEIVER_RESUME": "Получена команда с ИК-пульта"
         }
     );
 

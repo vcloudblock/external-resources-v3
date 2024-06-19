@@ -10,6 +10,9 @@ function getInterfaceTranslations () {
         "en": {
             "nrf24l01.description": "2.4G RF transceiver module."
         },
+        "ru": {
+            "nrf24l01.description": "Модуль приемопередатчика 2,4 ГГц."
+        },
         "zh-cn": {
             "nrf24l01.description": "2.4G 无线射频传输模块。"
         },
@@ -24,7 +27,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "NRF24L01_CATEGORY": "NRF24l01",
@@ -38,6 +41,22 @@ function registerBlocksMessages (Blockly) {
             "NRF24L01_SENDSTRING": "nrf24l01 send string %1 to id %2",
             "NRF24L01_SENDVALUE": "nrf24l01 send value %1 = %2 to id %3",
             "NRF24L01_VALUEAVAILABLE": "nrf24l01 value %1 available?"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "NRF24L01_CATEGORY": "NRF24l01",
+            "NRF24L01_HASDATA": "nrf24l01 получены данные?",
+            "NRF24L01_INIT": "Инициализировать nrf24l01 на пинах CE %1 CSN %2 id %3",
+            "NRF24L01_PARSENUMBER": "nrf24l01 парсить номер",
+            "NRF24L01_PARSESTRING": "nrf24l01 парсить строку",
+            "NRF24L01_PARSEVALUE": "nrf24l01 парсить значение %1",
+            "NRF24L01_READDATA": "nrf24l01  читать данные",
+            "NRF24L01_SENDNUMBER": "nrf24l01 отправить номер %1 на id %2",
+            "NRF24L01_SENDSTRING": "nrf24l01 отправить строку %1 to id %2",
+            "NRF24L01_SENDVALUE": "nrf24l01 отправить значение %1 = %2 на id %3",
+            "NRF24L01_VALUEAVAILABLE": "nrf24l01 значение %1 доступно?"
         }
     );
 

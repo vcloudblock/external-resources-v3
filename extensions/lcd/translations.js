@@ -11,6 +11,10 @@ function getInterfaceTranslations () {
             "lcd.name": "1602 LCD",
             "lcd.description": "1602 liquid crystal display which based on I2C bus."
         },
+        "ru": {
+            "lcd.name": "Символьный дисплей 1602 LCD",
+            "lcd.description": "1602 символьный дисплей на шине I2C."
+        },
         "zh-cn": {
             "lcd.name": "1602 液晶显示器",
             "lcd.description": "基于 I2C 总线的1602液晶显示器。"
@@ -27,7 +31,7 @@ function registerScratchExtensionTranslations () {
     return {};
 }
 
-function registerBlocksMessages (Blockly) { 
+function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "LCD_CATEGORY": "1602 LCD",
@@ -43,6 +47,24 @@ function registerBlocksMessages (Blockly) {
             "LCD_SETCURSORSTYLE": "set lcd cursor %1 style %2",
             "LCD_STYLE_BLINK": "blink",
             "LCD_STYLE_NOBLINK": "no-blink"
+        }
+    );
+
+    Object.assign(Blockly.ScratchMsgs.locales["ru"],
+        {
+            "LCD_CATEGORY": "1602 LCD",
+            "LCD_CLEAR": "Очистить ЖК-дисплей",
+            "LCD_INIT": "Инициализировать ЖК-дисплей адрес I2C %1",
+            "LCD_PRINT": "Напечатать %1 на ЖК-дисплее",
+            "LCD_SATE_DISPLAY": "Дисплей",
+            "LCD_SATE_HIDE": "Скрыть",
+            "LCD_SATE_OFF": "Выключить",
+            "LCD_SATE_ON": "Включить",
+            "LCD_SETBACKLIGHT": "установить подсветку ЖК-дисплея в %1",
+            "LCD_SETCURSORPOSITION": "установить позицию курсора ЖК-дисплея в (x: %1 y: %2)",
+            "LCD_SETCURSORSTYLE": "установить курсор на ЖК-дисплее в %1 стиль %2",
+            "LCD_STYLE_BLINK": "Мерцать",
+            "LCD_STYLE_NOBLINK": "Не мерцать"
         }
     );
 
