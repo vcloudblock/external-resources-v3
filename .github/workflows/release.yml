@@ -94,10 +94,3 @@ jobs:
           asset_name: ${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt
           asset_content_type: text/plain
 
-      # Upload to digitalocean
-      - name: Release resources to digital ocean spaces
-        run: |
-          export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
-          export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
-          upload-file --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip  --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
-          upload-file --filePath=${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt  --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
