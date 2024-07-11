@@ -10,3 +10,5 @@ translations/
 # npm file
 node_modules/
 
+# Packaged files
+dist/
