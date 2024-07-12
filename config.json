@@ -5,10 +5,8 @@
             "repo": "openblockcc/external-resources-v3"
         },
         "cn": {
-            "provider": "spaces",
-            "name": "openblock",
-            "path": "resource",
-            "region": "sgp1"
+            "provider": "gitee",
+            "repo": "openblockcc/external-resources-v3"
         }
     },
     "version": "x.x.x"
