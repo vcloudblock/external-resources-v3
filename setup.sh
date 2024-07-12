@@ -10,11 +10,12 @@ fi
 # Get the directory where the current script is located
 INSTALL_DIR="$(cd "$(dirname "$0")" && pwd -P)"
 
-# Path to the Launch Agent plist file
-LAUNCH_AGENT_PLIST=~/Library/LaunchAgents/openblock.cc.openblockExternalResource.setenv.plist
-
 # Check if the system is macOS
 if [[ "$(uname)" == "Darwin" ]]; then
+
+    # Path to the Launch Agent plist file
+    LAUNCH_AGENT_PLIST=/Library/LaunchAgents/openblock.cc.openblockExternalResource.setenv.plist
+
     # Create Launch Agent plist file
     mkdir -p $(dirname "$LAUNCH_AGENT_PLIST")
     cat <<EOF > "$LAUNCH_AGENT_PLIST"
@@ -29,7 +30,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
         <string>launchctl</string>
         <string>setenv</string>
         <string>OPENBLOCK_EXTERNAL_RESOURCES</string>
-        <string>"$INSTALL_DIR"</string>
+        <string>$INSTALL_DIR</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

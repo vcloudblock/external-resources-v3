@@ -1,7 +1,6 @@
 #!/bin/bash
 
-CURRENT_USER=$(ls -l /dev/console | awk '{print $3}')
-INSTALL_DIR="/Users/$CURRENT_USER/Library/OpenBlockExternalResources"
+INSTALL_DIR="/Library/OpenBlockExternalResources"
 
 if [ -x "$INSTALL_DIR/setup.sh" ]; then
     "$INSTALL_DIR/setup.sh"

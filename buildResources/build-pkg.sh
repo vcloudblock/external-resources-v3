@@ -22,12 +22,14 @@ while read -r line; do
     EXCLUDES="$EXCLUDES --exclude='$line'"
 done < "$IGNORE_FILE"
 
+echo $EXCLUDES
+
 eval rsync -av $EXCLUDES "$SOURCE_DIR/" "$BUILD_DIR/"
 
-pkgbuild --root ./ \
+pkgbuild --root ./dist/pkg/ \
          --identifier openblock.cc.openblock-external-resource \
          --version $VERSION \
-         --install-location ~/Library/OpenBlockExternalResources \
+         --install-location /Library/OpenBlockExternalResources \
          --ownership recommended \
          --scripts buildResources/mac-scripts \
          ./dist/OpenBlock-External-Resources-v$VERSION.pkg
