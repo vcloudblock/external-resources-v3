@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "eitghtTimesEightMatirxDisplay.name": "8x8點陣屏",
             "eitghtTimesEightMatirxDisplay.description": "基於MAX7219的8x8點陣屏。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

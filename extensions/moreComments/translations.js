@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "moreComments.name": "更多註釋",
             "moreComments.description": "讓你能夠以積木塊的形式添加註釋來增加程序的可讀性。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

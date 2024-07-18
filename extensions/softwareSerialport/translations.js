@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "softwareSerial.name": "軟件串口",
             "softwareSerial.description": "使 Arduino 可以使用其他數字口進行串口通信。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

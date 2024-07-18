@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "rgbLedStrip.name": "RGB LED 燈條",
             "rgbLedStrip.description": "基於單總線的 RGB LED 的單個像素或燈條。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

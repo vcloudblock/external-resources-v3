@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "chineseTTS.name": "中文 TTS",
             "chineseTTS.description": "基於 SYN6288 的語音合成模塊, 支持中文、英文字母以及數字。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

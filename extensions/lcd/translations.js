@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "lcd.name": "1602 液晶顯示器",
             "lcd.description": "基於 I2C 總線的1602液晶顯示器。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

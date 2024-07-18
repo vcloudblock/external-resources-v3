@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "max6675.name": "MAX6675 模塊",
             "max6675.description": "基於 MAX6675 的 K 型熱電偶溫度測量模塊，可測量範圍為 0 ~ 1024℃"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

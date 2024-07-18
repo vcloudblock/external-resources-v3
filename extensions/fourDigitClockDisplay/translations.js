@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "fourDigitClockDisplay.name": "4位時鐘數碼管",
             "fourDigitClockDisplay.description": "基於 TM1637 的4位時鐘數碼管。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "passiveBuzzer.name": "無源蜂鳴器",
             "passiveBuzzer.description": "不同於有源蜂鳴器，無源蜂鳴器可以用來播放不同音調的聲音和播放鈴聲。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

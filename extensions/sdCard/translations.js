@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "sdCard.name": "SD卡模塊",
             "sdCard.description": "在SD卡中保存和讀取你的數據。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

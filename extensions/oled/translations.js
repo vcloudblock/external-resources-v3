@@ -19,8 +19,7 @@ function getInterfaceTranslations () {
         "zh-tw": {
             "oled.description": "基於 SSD1306 驅動的 I2C oled 顯示屏。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

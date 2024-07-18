@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "pca9685.name": "PCA9685 模塊",
             "pca9685.description": "基於 PCA9685 的16通道 PWM 驅動模塊, 使用 I2C 總線進行通訊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

@@ -19,8 +19,7 @@ function getInterfaceTranslations () {
         "zh-tw": {
             "l298n.description": "常見的高功率雙路電機驅動模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "eightDigitDisplay.name": "8位數碼管",
             "eightDigitDisplay.description": "基於 MAX7219 的8位數碼管。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

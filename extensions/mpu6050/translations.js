@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "mpu6050.name": "MPU6050 傳感器",
             "mpu6050.description": "基於 MPU6050 的6軸姿態傳感器。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

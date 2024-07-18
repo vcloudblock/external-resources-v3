@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "max30102.name": "MAX30102 傳感器",
             "max30102.description": "基於 MAX30102 的血氧心跳探測模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

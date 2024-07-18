@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "insertSourceCode.name": "插入源代碼",
             "insertSourceCode.description": "將源代碼直接插入積木中，讓專業用戶可以實現一些更高級的功能。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

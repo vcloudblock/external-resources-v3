@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "mfrc522.name": "MFRC-522 模塊",
             "mfrc522.description": "使用 SPI 接口的 13.56MHz 射頻識別模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

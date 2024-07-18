@@ -19,8 +19,7 @@ function getInterfaceTranslations () {
         "zh-tw": {
             "tcs3200.description": "基於 TCS3200 的顏色傳感器模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

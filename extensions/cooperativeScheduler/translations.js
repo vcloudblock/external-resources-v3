@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "cooperativeScheduler.name": "多任務調度器",
             "cooperativeScheduler.description": "使 Arduino 可以運行多個任務。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

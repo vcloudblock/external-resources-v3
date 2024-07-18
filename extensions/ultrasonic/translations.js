@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "ultrasonic.name": "超聲波",
             "ultrasonic.description": "標準的超聲波測距傳感器模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

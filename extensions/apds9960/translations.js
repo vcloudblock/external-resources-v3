@@ -19,8 +19,7 @@ function getInterfaceTranslations () {
         "zh-tw": {
             "apds9960.description": "使用 I2C 接口的接近、燈光、RGB和手勢傳感器。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

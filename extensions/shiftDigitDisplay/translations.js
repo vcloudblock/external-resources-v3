@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "shiftDigitDisplay.name": "移位數碼管",
             "shiftDigitDisplay.description": "使用動態掃描方式顯示的基於 74HC595 的數碼管。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

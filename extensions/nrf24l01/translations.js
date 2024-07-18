@@ -19,8 +19,7 @@ function getInterfaceTranslations () {
         "zh-tw": {
             "nrf24l01.description": "2.4G 無線射頻傳輸模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

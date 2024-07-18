@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "irRemoteReceiver.name": "紅外遙控接收器",
             "irRemoteReceiver.description": "接收並解碼紅外載波中的數據。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

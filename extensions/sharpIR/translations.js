@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "sharpIR.name": "夏普紅外傳感器",
             "sharpIR.description": "基於三角測量原理的紅外測距傳感器。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

@@ -19,8 +19,7 @@ function getInterfaceTranslations () {
         "zh-tw": {
             "u8g2.description": "U8g2 是一個適配多種屏幕的通用圖形庫，適用於 LCD（基於ST7920）或 OLED（基於SSD1306）屏幕。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

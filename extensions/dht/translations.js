@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "dht.name": "DHT 傳感器",
             "dht.description": "DHT 溫濕度傳感器模塊。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

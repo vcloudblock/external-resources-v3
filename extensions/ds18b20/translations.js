@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "ds18b20.name": "DS18B20 傳感器",
             "ds18b20.description": "基於 DS18B20 的單總線數字溫度傳感器。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {

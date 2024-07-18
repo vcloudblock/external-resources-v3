@@ -23,8 +23,7 @@ function getInterfaceTranslations () {
             "servo.name": "舵機",
             "servo.description": "讓 Microbit 可以控制普通的舵機。"
         }
-    }
-    ;
+    };
 }
 
 function registerScratchExtensionTranslations () {
