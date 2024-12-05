@@ -16,7 +16,7 @@ done
 
 SOURCE_DIR="./"
 BUILD_DIR="dist/pkg"
-INSTALL_DIR="opt/OpenBlockExternalResources"
+INSTALL_DIR="opt/VCloudBlockExternalResources"
 
 PKGIGNORE_FILE=".pkgignore"
 EXCLUDE_PARAMS=()
@@ -45,4 +45,4 @@ INSTALL_SIZE=$(find $BUILD_DIR/ -type f -not -path "$BUILD_DIR/DEBIAN/*" -exec d
 sed -i "s/^Installed-Size: .*/Installed-Size: $INSTALL_SIZE/" $BUILD_DIR/DEBIAN/control
 sed -i "s/^Version: .*/Version: $VERSION/" $BUILD_DIR/DEBIAN/control
 
-dpkg-deb -b $BUILD_DIR "./dist/OpenBlock-External-Resources-v$VERSION.deb"
+dpkg-deb -b $BUILD_DIR "./dist/VCloudBlock-External-Resources-v$VERSION.deb"

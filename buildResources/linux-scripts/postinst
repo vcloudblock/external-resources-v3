@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INSTALL_DIR="/opt/OpenBlockExternalResources"
+INSTALL_DIR="/opt/VCloudBlockExternalResources"
 
 if [ -x "$INSTALL_DIR/setup.sh" ]; then
     "$INSTALL_DIR/setup.sh"

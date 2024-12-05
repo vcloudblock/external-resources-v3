@@ -4,7 +4,7 @@ const deviceDemo = formatMessage => ({
         default: 'Third Party Device Demo'
     }),
     deviceId: 'deviceDemo_esp32',
-    manufactor: 'OpenBlock',
+    manufactor: 'VCloudBlock',
     learnMore: '', // A link you can learn more about the device
     typeList: ['arduino', 'microPython'],
     iconURL: 'assets/deviceDemo.png',

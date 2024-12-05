@@ -27,9 +27,9 @@ echo $EXCLUDES
 eval rsync -av $EXCLUDES "$SOURCE_DIR/" "$BUILD_DIR/"
 
 pkgbuild --root ./dist/pkg/ \
-         --identifier openblock.cc.openblock-external-resource \
+         --identifier vcloudblock.vcloudblock-external-resource \
          --version $VERSION \
-         --install-location /Library/OpenBlockExternalResources \
+         --install-location /Library/VCloudBlockExternalResources \
          --ownership recommended \
          --scripts buildResources/mac-scripts \
-         ./dist/OpenBlock-External-Resources-v$VERSION.pkg
+         ./dist/VCloudBlock-External-Resources-v$VERSION.pkg
