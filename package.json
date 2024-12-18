@@ -7,12 +7,12 @@
     "lint": "eslint ./",
     "clean": "rimraf translations"
   },
-  "author": "netboy",
+  "author": "vcloudblock",
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.3.0",
     "eslint-config-scratch": "^5.0.0",
-    "vcloudblock-resource": "^0.2.0-prerelease.20240718144936"
+    "vcloudblock-resource": "file://D:/vcloudblock/locallibs/vcloudblock-resource-0.2.0.tgz"
   }
 }
