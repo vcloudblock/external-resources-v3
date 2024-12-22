@@ -20,7 +20,7 @@ const softwareSerial = formatMessage => ({
     translations: 'translations.js',
     official: true,
     tags: ['other'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: 'https://wiki.openblovcloudblockck.cc'
 });
 
 module.exports = softwareSerial;

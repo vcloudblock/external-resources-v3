@@ -21,7 +21,7 @@ const fourDigitClockDisplay = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['display'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: 'https://wiki.vcloudblock.cc'
 });
 
 module.exports = fourDigitClockDisplay;

@@ -9,8 +9,8 @@ function registerGenerators (Blockly) {
         const s3 = block.getFieldValue('S3');
         const oe = block.getFieldValue('OE');
 
-        Blockly.Arduino.includes_.tcs3200_init = `#include <openblock_tcs3200.h>`;
-        Blockly.Arduino.definitions_.tcs3200_init = `Openblock_tcs3200  tcs3200(${s2}, ${s3}, ${s0}, ${s1}, ${oe});`;
+        Blockly.Arduino.includes_.tcs3200_init = `#include <vcloudblock_tcs3200.h>`;
+        Blockly.Arduino.definitions_.tcs3200_init = `VCloudblock_tcs3200  tcs3200(${s2}, ${s3}, ${s0}, ${s1}, ${oe});`;
         return 'tcs3200.begin();\n';
     };
 

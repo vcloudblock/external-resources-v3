@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource@latest
+      - run: npm i -g vcloudblock-resource@latest
 
       - name: Sync translations
         run: |

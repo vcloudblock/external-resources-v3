@@ -41,7 +41,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const response = await fetch('https://gitee.com/api/v5/repos/openblockcc/external-resources-v3/releases', {
+          const response = await fetch('https://gitee.com/api/v5/repos/vcloudblock/external-resources-v3/releases', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -72,11 +72,11 @@ jobs:
           releaseId="${{ steps.create_gitee_release.outputs.release_id }}"
           for file in ./downloads/*; do
           echo ${file}
-          echo "https://gitee.com/api/v5/repos/openblockcc/external-resources-v3/releases/$releaseId/attach_files"
+          echo "https://gitee.com/api/v5/repos/vcloudblock/external-resources-v3/releases/$releaseId/attach_files"
           curl -X POST \
               -F "access_token=${{ secrets.GITEE_TOKEN }}" \
               -F "file=@${file}" \
-              "https://gitee.com/api/v5/repos/openblockcc/external-resources-v3/releases/$releaseId/attach_files"
+              "https://gitee.com/api/v5/repos/vcloudblock/external-resources-v3/releases/$releaseId/attach_files"
           done
       env:
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}

@@ -21,7 +21,7 @@ const sdCard = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['other'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: 'https://wiki.vcloudblock.cc'
 });
 
 module.exports = sdCard;

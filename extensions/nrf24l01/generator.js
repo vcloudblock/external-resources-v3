@@ -7,8 +7,8 @@ function registerGenerators (Blockly) {
         const csn = block.getFieldValue('CSN');
         const id = Blockly.Arduino.valueToCode(block, 'ID', Blockly.Arduino.ORDER_ATOMIC);
 
-        Blockly.Arduino.includes_.nrf24l01_init = `#include <Openblock_nrf.h>`;
-        Blockly.Arduino.definitions_.nrf24l01_init = `Openblock_nrf nrf24l01;`;
+        Blockly.Arduino.includes_.nrf24l01_init = `#include <VCloudblock_nrf.h>`;
+        Blockly.Arduino.definitions_.nrf24l01_init = `VCloudblock_nrf nrf24l01;`;
 
         return `nrf24l01.init(${id}, ${ce}, ${csn});\n`;
     };

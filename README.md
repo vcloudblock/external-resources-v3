@@ -1,19 +1,19 @@
 # external-resources-v3
 
-[![Release](https://github.com/openblockcc/external-resources-v3/actions/workflows/release.yml/badge.svg)](https://github.com/openblockcc/external-resources-v3/actions/workflows/release.yml)
-![GitHub](https://img.shields.io/github/license/openblockcc/external-resources-v3)
+[![Release](https://github.com/vcloudblock/external-resources-v3/actions/workflows/release.yml/badge.svg)](https://github.com/vcloudblock/external-resources-v3/actions/workflows/release.yml)
+![GitHub](https://img.shields.io/github/license/vcloudblock/external-resources-v3)
 
-Provide external devices and extensions to Openblock.
+Provide external devices and extensions to vcloudblock.
 
 ## Contribute
 
-Please visit the wiki: https://wiki.openblock.cc/ to learn how to make a resource.
+Please visit the wiki: https://wiki.vcloudblock.cc/ to learn how to make a resource.
 
 Notice that offical attributes can only be officially marked by the community, please do not add the offical attribute to the extension of pr.
 
 ## Localization
 
-All resources marked as offical will be included in the official translation maintenance list, do not modify the translation file content of these files directly. You should apply to join the OpenBlock team on transifex to translate these content: https://www.transifex.com/openblockcc/public/
+All resources marked as offical will be included in the official translation maintenance list, do not modify the translation file content of these files directly. You should apply to join the vcloudblock team on transifex to translate these content: https://www.transifex.com/vcloudblock/public/
 
 ## Pack
 
@@ -50,4 +50,4 @@ All resources marked as offical will be included in the official translation mai
 
 ## Customization
 
-Visi: [https://wiki.openblock.cc/developer-guide/customize-external-resource](https://wiki.openblock.cc/developer-guide/customize-external-resource)
+Visi: [https://wiki.vcloudblock.cc/developer-guide/customize-external-resource](https://wiki.vcloudblock.cc/developer-guide/customize-external-resource)
